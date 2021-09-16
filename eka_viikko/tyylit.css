@@ -1,0 +1,100 @@
+#eka {
+  float: left;
+  padding: 20px 20px 5px 0px;
+}
+
+#toka {
+  float: right;
+  padding: 20px 0px 5px 20px;
+}
+
+#kolmas {
+  float: left;
+  padding: 20px 20px 5px 0px;
+}
+
+#neljäs {
+  float: right;
+  padding: 20px 0px 5px 20px;
+}
+
+#Taulukko {
+  width: 170%;
+  background-color: powderblue;
+}
+
+#kaupungit {
+  width: 100%;
+  border: 1px solid black;
+}
+
+#kaupungit th {
+  text-align: left;
+}
+
+#kaupungit2 {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#kaupungit2 th {
+  text-align: left;
+}
+
+#kaupungit3 {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#kaupungit3 th {
+  text-align: left;
+  background-color: #F00000;
+}
+
+#kaupungit3 tr:nth-child(even) {
+  background-color: #FFF000;
+}
+
+#kaupungit3 tr:nth-child(odd) {
+  background-color: #FFFFF0;
+}
+
+#hedelmät {
+  width: 450px;
+  border-collapse: collapse;
+}
+
+#hedelmät thead th {
+  background-color: grey;
+  font-weight: bold;
+  text-align: right;
+  border: solid 1px black;
+    }
+
+#hedelmät thead td {
+  background-color: grey;
+  font-weight: bold;
+  text-align: left;
+  border: none;
+}
+
+#hedelmät tbody td {
+  border: 1px solid black;
+  text-align: right;
+}
+
+#hedelmät tbody th {
+  text-align: left;
+  border: none;
+}
+
+#hedelmät tbody tr:nth-child(odd) {
+  background-color: powderblue;
+}
+
+#hedelmät tfoot {
+  background-color: grey;
+  font-weight: bold;
+  text-align: right;
+  border: solid 1px black;
+}
