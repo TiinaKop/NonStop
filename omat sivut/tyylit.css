@@ -1,0 +1,103 @@
+body {
+  margin-left: 8em;
+  margin-top: 3em;
+  background-color: rgb(186, 190, 193);
+}
+
+header {
+  height: 10em;
+  background-color: ;
+  margin: 1em;
+}
+
+header h1 {
+  color: black;
+  font-size: 3em;
+}
+
+header h2 {
+  margin-top: -1.5em;
+}
+
+h1, h2, h3, h4, h5, p, a {
+  font-family: comic;
+}
+
+nav {
+  background-color: ;
+}
+
+ol {
+  margin-left: -2.5em;
+}
+
+li {
+  float: left;
+  list-style-type: none;
+  margin-left: em;
+  padding: 2em;
+  background-color: ;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 8px 0 rgba(0, 0, 0, 0.19);
+  left: 10%;
+}
+
+
+section {
+  height: auto;
+  width: 40em;
+  background-color: ;
+  margin-left: 1em;
+  text-align: justify;
+}
+
+section h1 {
+  text-align: center;
+}
+
+
+
+footer {
+  width: auto;
+  text-align: center;
+}
+
+.vesipisara {
+  margin-left: em;
+  margin-top: 1em;
+}
+
+aside {
+width: 200px;
+height: 350px;
+float: right;
+margin-top: -510px;
+margin-right: 290px;
+text-align: center;
+}
+
+.ajankohtaista {
+  padding: 1em;
+  box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.2), 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.ajankohtaista p, a {
+margin-top: -0.2em;
+}
+
+
+
+.huonovanhempi {
+  margin-top: em;
+}
+
+.blogi {
+  width: 200px;
+  height: 180px;
+  box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.2), 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.blogi p {
+  margin-top: -0.1px;
+}
