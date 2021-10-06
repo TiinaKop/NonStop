@@ -1,6 +1,6 @@
 /*Hex*/
 body {
-background-color: rgb(72, 106, 106);
+background-color: rgb(235, 235, 235);
 }
 
 header {
@@ -120,12 +120,12 @@ section h2 {
 }
 
 .teksti {
-  color: rgb(180, 188, 188);
+  color: rgb(124, 125, 125);
 }
 
 .image {
   height: 150px;
-  background-color: rgb(72, 106, 106);
+  background-color: rgb(235, 235, 235);
 }
 
 .ideologia {
@@ -148,7 +148,7 @@ footer {
 }
 
 table {
-  background-color: rgb(101, 126, 126);
+  background-color: rgb(180, 188, 188);
   text-align: left;
   border: 1px solid black;
   width: 100%
