@@ -79,6 +79,13 @@ section h2 {
   height: 200px;
 }
 
+@media screen and (max-width: 500px) {
+  .teksti_v, .image {
+    width: 100%;
+  }
+}
+
+
 .teksti_o {
   width: 75%;
   border: 1px solid red;
@@ -118,7 +125,7 @@ section h2 {
 
 .image {
   height: 150px;
-  background-color: #5E5D60;
+  background-color: rgb(72, 106, 106);
 }
 
 .ideologia {
