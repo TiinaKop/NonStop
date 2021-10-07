@@ -1,0 +1,16 @@
+.alaosa
+{
+  position: fixed;
+  background-color: grey;
+  margin-top: 20px;
+  width: 99%;
+
+}
+
+.alaosa .sisalto
+{
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
