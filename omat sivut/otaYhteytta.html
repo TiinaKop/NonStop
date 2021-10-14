@@ -1,22 +1,154 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="tyylit.css">
-    <title>Ota yhteyttä</title>
-  </head>
-  <body>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="tyylit.css">
+<style>
 
-    <header>
-      <h1>Tmi Merja Koponen</h1>
-      <h2>mielenterveyspalveluita</h2>
-      <nav>
-          <ol>
-              <li><a href="omatSivut.html">Etusivu</a></li>
-              <li><a href="minusta.html">Tietoa minusta</a></li>
-              <li><a href="palvelut.html">Palvelut</a></li>
-              <li><a href="blogi.html">Blogi</a></li>
-              <li><a href="otaYhteytta.html">Ota yhteyttä</a></li>
-          </ol>
-      </nav>
-    </header>
+.oikeasivu {
+  padding-bottom: 3.7%;
+}
+
+.löytää {
+width: 40%;
+height: auto;
+position: relative;
+margin-top: 50%;
+margin-left: 20%;
+}
+
+
+input[type=lanupe], input[type=mentline] {
+width: 90%;
+height: auto;
+background-color: powderblue;
+margin-left: 0%;
+margin-top: 0%;
+border: none;
+text-decoration: none;
+padding: 8%;
+cursor: pointer;
+text-align: center;
+font-size: 120%;
+font-family: maiandra gd;
+font-color: black;
+}
+
+input[type=text] {
+  width: 80%;
+  padding: 8px 8px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+input[type=email] {
+  width: 80%;
+  padding: 8px 8px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+  .löytää {
+    width: 25%;
+    margin-top: 20%;
+    margin-left: 0%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .löytää {
+    width: 40%;
+  }
+}
+
+
+
+
+</style>
+<body>
+
+
+<div class="oikeasivu">
+<div class="tekstit">
+<h1 style="font-size:230%;">Tmi Merja Koponen</h1>
+<h2 style="color:black;margin-top: -25px;"><small>Mielenterveyspalveluita</small></h2>
+
+<img src="vesipisara.jpg" alt="vesipisara" class="vesipisaraviiva">
+<br>
+<h3>OTA YHTEYTTÄ</h3>
+
+<form action="/action_page.php" target="_blank" method="post">
+  <label for="nimi">Nimi:</label><br>
+  <input type="text" id="nimi" name="nimi"><br>
+  <label for="email">Sähköpostiosoite:</label><br>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="viesti">Viesti:</label><br>
+  <textarea id="viesti" name="viesti" rows="12" cols="70"></textarea><br><br>
+  <input type="submit" value="Lähetä">
+</form>
+
+
+</div>
+</div>
+
+<div class="vasensivu">
+	<div class="valikkotausta">
+		<div class="valikkolinkit1">
+<a href="index.htm">Etusivu</a><br />
+		</div>
+<br>
+		<div class="valikkolinkit1">
+			<div class="alasveto">
+<a href="palvelut.html">Palvelut</a><br />
+				<div class="alasvetovalikot">
+<br>
+<a href="ammattilaisille.html">Ammattilaisille</a>
+<br>
+<a href="yksityisille1.html">Yksityisille</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="valikkotausta2">
+		<div class="valikkolinkit2">
+<a href="hinnasto.html">Hinnasto</a><br />
+		</div>
+<br>
+		<div class="valikkolinkit2">
+<a href="blogi.html">Blogi</a><br />
+		</div>
+	</div>
+
+	<div class="valikkotausta3">
+		<div class="valikkolinkit3">
+<a href="yhteystiedot.html">Yhteystiedot</a><br />
+		</div>
+<br>
+		<div class="valikkolinkit3">
+<a href="tietoa_minusta.html">Tietoa minusta</a><br />
+		</div>
+	</div>
+
+
+
+
+
+
+<div class="löytää">
+<p style="font-size: 110%";>Minut löytää myös:</p>
+
+<a href="https://www.lanupe.fi/" target="_blank">
+<input type="lanupe" value="Lanupe">
+</a>
+<br>
+<br>
+<a href="http://www.mentline.fi/">
+<input type="mentline" value="Mentline">
+</a>
+
+
+</div>
+</div>
+</body>
+</html>
