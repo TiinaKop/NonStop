@@ -1,6 +1,5 @@
-body {
-  background-color: white;
-}
+/* yhteiset */
+
 
 p, pre, a, h1, h2, h3, h4, h5 {
 font-family: maiandra gd;
@@ -10,7 +9,6 @@ font-color: black;
 a {
 font-size:110%;
 }
-
 
 p {
 font-size:90%;
@@ -26,7 +24,6 @@ float: left;
 background-color: ;
 }
 
-
 .valikkolinkit1 {
 width: 13%;
 height: auto;
@@ -41,7 +38,6 @@ float: left;
 background-color: ;
 }
 
-
 .valikkolinkit2 {
 width: 13%;
 height: auto;
@@ -55,7 +51,6 @@ width: 32%; height: auto;
 float: left;
 background-color: ;
 }
-
 
 .valikkolinkit3 {
 width: 13%;
@@ -90,23 +85,7 @@ background-color: grey;
   width: 30%;
 }
 
-.ajankohtaista {
-width: 90%;
-float: left;
-height: auto;
-margin-top:25%;
-text-align: center;
-box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
-.blogi {
-background-color: ;
-width: 90%;
-height: auto;
-margin-top:18%;
-float: left;
-
-}
 
 .kuva {
 float: left;
@@ -125,23 +104,7 @@ left: 0%;
 }
 
 
-.alasvetovalikot {
-  display: none;
-  position: absolute;
-  z-index: 1;
-}
 
-.alasvetovalikot a {
-  color: black;
-  text-decoration: none;
-  display: block;
-}
-
-.alasvetovalikot a:hover {background-color: powderblue}
-
-.alasveto:hover .alasvetovalikot {
-  display: block;
-}
 
 a:hover {background-color: powderblue}
 
@@ -159,3 +122,39 @@ text-decoration: none;
 * {
   box-sizing: border-box;
 }
+
+/* index */
+
+.vesipisara {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 20px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ajankohtaista {
+width: 90%;
+float: left;
+height: auto;
+margin-top:25%;
+text-align: center;
+box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.blogi {
+background-color: ;
+width: 90%;
+height: auto;
+margin-top:25%;
+float: left;
+}
+
+.huonovanhempiKuva {
+float: left;
+max-width:65%;
+heigt: auto;
+margin-top: 4%;
+margin-right: 8%;
+box-shadow: 0 20px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* index loppuu */
