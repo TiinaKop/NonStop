@@ -1,5 +1,3 @@
-
-
 var luku1=3;
 var luku2=2;
 var uusi= luku1 + luku2;
