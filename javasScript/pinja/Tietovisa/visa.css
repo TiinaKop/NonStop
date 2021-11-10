@@ -1,0 +1,48 @@
+body {
+  background-color: #f06226;
+  font-family: arial, sans-serif;
+  font-size: 1em;
+  color: #fff;
+}
+
+#sisalto {
+  width: 50%;
+  background-color: #199fdb;
+  margin: auto;
+  margin-top: 2%;
+  overflow: auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  border-bottom: 1px solid #f06226;
+}
+
+section {
+  min-height: 400px;
+  overflow: auto;
+}
+
+footer {
+  text-align: center;
+}
+
+input[type='submit'] {
+  background-color: #f06226;
+  border: 0;
+  color: #fff;
+  padding-left: 10px 15px;
+  cursor: pointer;
+}
+
+#tulokset h3 {
+  background-color: #f06226;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+#tulokset span {
+  background-color: #f06226;
+  font-weight: bold;
+}
