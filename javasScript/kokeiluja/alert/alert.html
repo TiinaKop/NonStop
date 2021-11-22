@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/muotoilu.css">
+    <script src="alert.js" charset="utf-8"></script>
+    <title>Kyselylomake</title>
+  </head>
+  <body>
+
+
+      <main>
+        <form id="myForm" name="myForm" action="index.html" onclick="myFunction()" method="post">
+
+              <label id="nimisyotto" for="nimi">Nimi:</label>
+              <input id ="nimi" type="text" name="nimi" value="" placeholder="Matti Meikäläinen"><br><br>
+
+      
+
+          <label for="pudotus">Kuinka hyvä olet Ohjelmoimaan?</label>
+          <select class="textbox" id="pudotus">
+            <option value=""selected disabled hidden>Kuinka hyvä olet?</option>
+            <!-- Ensimmäinen valinta on lukittu että latautuu heti alussa,
+            mutta sen arvo on tyhjää eli value="" mikä tarkastetaan funktiossa droppi()-->
+            <option value="huono">Huono</option>
+            <option value="kohtalainen">Kohtalainen</option>
+            <option value="hyva">Hyvä</option>
+            <option value="paras">Paras</option>
+
+          </select>
+
+
+          <input type="submit" value="Submit">
+        </form>
+      </main>
+    </body>
+  </html>

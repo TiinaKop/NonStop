@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="projekstiYksi.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()" >
+
+
+<label id="nimisyotto" for="nimi">Nimi:</label>
+<input id ="nimi" type="text" name="nimi" value="" placeholder="Matti Meikäläinen"><br><br>
+
+<label id="ikasyotot" for="ika">Ikä:</label>
+<input id="ika" type="text" name="ika" value="" placeholder="30" onkeyup="ika()"><br><br>
+
+<label id="emailsyotto" for="email">email:</label>
+<input id="email" type="text" name="email" value="" placeholder="matti.meikalainen@gmail.com" onkeyup="email()"><br><br>
+
+<input type="submit" value="register">
+
+  </body>
+</html>
