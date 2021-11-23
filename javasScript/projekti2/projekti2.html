@@ -2,6 +2,53 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+    <title>HALOO</title>
+  </head>
+  <body>
+
+
+  <p>arvaa numero 1-10 väliltä</p>
+  <input type="number" id="annaNumero">
+  <button id="btn">Enter</button>
+  <p id="demo">
+
+<script>
+
+
+  document.getElementById("btn").addEventListener("click", myFunction);
+
+  function myFunction() {
+    let annaNumero = document.getElementById("annaNumero").value;
+    let random = [Math.floor(Math.random()* 10)]
+    if (annaNumero == random) {
+      document.getElementById("demo").innerHTML = "Arvasit oikean numeron";
+    }
+    else if (annaNumero > random) {
+        document.getElementById("demo").innerHTML = "Arvauksesi on liian suuri";
+    }
+    else if (annaNumero < random) {
+        document.getElementById("demo").innerHTML = "Arvauksesi on liian pieni";
+    }
+  }
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Antaa selaimelle ohjeet miten käsittelee sivun ulottuuden ja skaalauksen.-->
     <meta name="description" content=""> <!-- Hakukoneille kuvaus sisällöstä-->
     <meta name="keywords" content=""> <!-- avain sanat millä hakukone löytää-->
@@ -12,24 +59,23 @@
   </head>
   <body>
     <header>
-      <h1>Arvauspeli</h1>
+      <h1>ARVAUSPELI</h1>
       <p>Saatko arvattua tietokoneen ajatteleman numeron?</p>
-      <p>Arvausertoja on kolme.</p>
+      <p>Arvausertoja on kolme</p>
       <p>ONNEA PELIIN!</p>
     </header>
     <section>
-      <h2 id="valitse">Valitse numero</h2>
       <div class="numerot">
-        <p class="pallot" id="1">1</p>
-        <p class="pallot" id="2">2</p>
-        <p class="pallot" id="3">3</p>
-        <p class="pallot" id="4">4</p>
-        <p class="pallot" id="5">5</p>
-        <p class="pallot" id="6">6</p>
-        <p class="pallot" id="7">7</p>
-        <p class="pallot" id="8">8</p>
-        <p class="pallot" id="9">9</p>
-        <p class="pallot" id="10">10</p>
+        <button class="pallot" id="yksi" type="button" name="button">1</button>
+        <button class="pallot" id="kaksi" type="button" name="button">2</button>
+        <button class="pallot" id="kolme" type="button" name="button">3</button>
+        <button class="pallot" id="nelja" type="button" name="button">4</button>
+        <button class="pallot" id="viisi" type="button" name="button">5</button>
+        <button class="pallot" id="kuusi" type="button" name="button">6</button>
+        <button class="pallot" id="seitseman" type="button" name="button">7</button>
+        <button class="pallot" id="kahdeksan" type="button" name="button">8</button>
+        <button class="pallot" id="yhdeksan" type="button" name="button">9</button>
+        <button class="pallot" id="kymmenen" type="button" name="button">10</button>
       </div>
     </section>
 
