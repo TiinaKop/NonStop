@@ -1,12 +1,12 @@
 function lahetaVastaukset() {
 
-var pisteet = 3;
+var yhteensa = 3;
 var pisteet = 0;
 var huom = 0;
 
 var k1 = document.forms[”kyselyLomake][”k1”].value;
-var k1 = document.forms[”kyselyLomake][”k2”].value;
-var k1 = document.forms[”kyselyLomake][”k3”].value;
+var k2 = document.forms[”kyselyLomake][”k2”].value;
+var k3 = document.forms[”kyselyLomake][”k3”].value;
 
 for(i= 1; i <= yhteensa; i++)
 {
@@ -15,10 +15,10 @@ for(i= 1; i <= yhteensa; i++)
     alert('Et vastannut kysymykseen numero: ' +i);
     huom = 1;
   }
-  if(huom ==1) return false;
+  if(huom == 1) return false;
   }
 
-var vastaukset = ["c", "b", "a"];
+var vastaukset = ["b", "a", "d"];
 
 for(i = 1; i <= yhteensa; i++)
 {
@@ -27,4 +27,11 @@ for(i = 1; i <= yhteensa; i++)
     pisteet++;
   }
 }
+
+
+
+  var tulokset = document.getElementById('tulokset');
+  alert('Sait ' + pisteet + ' pistettä, kun maksimi pistemäärä oli ' + yhteensa);
+  tulokset.innerHTML = '<h3>Sait <sapn>' + pisteet + '</span> pistettä, kun maksimi pistemäärä oli <span>' + yhteensa + '</span></h3>';
+  return false;
 }

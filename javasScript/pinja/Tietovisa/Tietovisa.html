@@ -12,29 +12,30 @@
         <h1>Tietovisa</h1>
         <p>Testaa taitosi</p>
       </header>
+    <div>
 
     <section>
       <div id="tulokset"></div>
 
       <form name"kyselyLomake" onsubmit = "return lahetaVastaukset()">
-        <h3>1. Kuka on Englannin kuningatar</h3>
-        <input type= "radio" name="k1" value="a" id="k1a">a. John Lennon<br>
-        <input type= "radio" name="k1" value="b" id="k1b">b. Elizabeth Tatcher<br>
-        <input type= "radio" name="k1" value="c" id="k1c">c. Lillibeth<br>
-      </form>
+        <h3>1. Mihin HTML elementtiin sijoitamme JavaScript koodin?</h3>
+        <input type= "radio" name="k1" value="a" id="k1a">a. js<br>
+        <input type= "radio" name="k1" value="b" id="k1b">b. script<br>
+        <input type= "radio" name="k1" value="c" id="k1c">c. body<br>
 
-      <form name"kyselyLomake" onsubmit = "return lahetaVastaukset()">
-        <h3>1. Kuka on Ruotsin kuningatar</h3>
-        <input type= "radio" name="k2" value="a" id="k2a">a. Estelle<br>
-        <input type= "radio" name="k2" value="b" id="k2b">b. Silvia<br>
-        <input type= "radio" name="k2" value="c" id="k2c">c. Madeleine<br>
-      </form>
 
-      <form name"kyselyLomake" onsubmit = "return lahetaVastaukset()">
-        <h3>1. Kuka on Tanskan kuningatar</h3>
-        <input type= "radio" name="k3" value="a" id="k3a">a. Margarethe<br>
-        <input type= "radio" name="k3" value="b" id="k3b">b. Isabella<br>
-        <input type= "radio" name="k3" value="c" id="k3c">c. Athena<br>
+
+        <h3>1. Mitä HTML attribuuttia käytetään viittamaan ulkoiseen JavaScript tiedostoon?</h3>
+        <input type= "radio" name="k2" value="a" id="k2a">a. src<br>
+        <input type= "radio" name="k2" value="b" id="k2b">b. link<br>
+        <input type= "radio" name="k2" value="c" id="k2c">c. rel<br>
+
+
+
+        <h3>1. Kuinka kirjoitat "Moikka" alert viestinä</h3>
+        <input type= "radio" name="k3" value="a" id="k3a">a. alertBox("Moikka");<br>
+        <input type= "radio" name="k3" value="b" id="k3b">b. document.write("Moikka");<br>
+        <input type= "radio" name="k3" value="c" id="k3c">c. Alert("Moikka");<br>
       <br><br>
       <input type="submit" value="Lähetä vastaukset">
       </form>
@@ -42,13 +43,7 @@
     </section>
 
     <footer><p>&copy; Marika Koponen</p></footer>
-    </div>
 
-    <script>
-      var tulokset = document.getElementById('tulokset');
-      alert('Sait ' + pisteet + ' pistettä, kun maksimi oistemäärä oli ' + yhteensa);
-      tulokset.innerHTML = '<h3>Sait <sapn>' + pisteet + '</span> pistettä, kun maksimimäärä oli <span>' + yhteensa + '</span></h3>';
-      return false;
-    </script>
+
   </body>
 </html>
