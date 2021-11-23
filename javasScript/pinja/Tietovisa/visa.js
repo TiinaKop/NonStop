@@ -1,28 +1,30 @@
 function lahetaVastaukset() {
 
-var yhteensa = 5;
+var yhteensa = 3;
 var pisteet = 0;
 var huom = 0;
 
-var k1 = document.forms[”kyselyLomake][”k1”].value;
-var k2 = document.forms[”kyselyLomake][”k2”].value;
-var k3 = document.forms[”kyselyLomake][”k3”].value;
+var k1 = document.forms["kyselyLomake"]["k1"].value;
+var k2 = document.forms["kyselyLomake"]["k2"].value;
+var k3 = document.forms["kyselyLomake"]["k3"].value;
 
 for(i= 1; i <= yhteensa; i++)
 {
-  if(eval('k'+i) == null || eval('k'+i) =='')
+  if(eval("k"+i) == null || eval("k"+i) =="")
   {
-    alert('Et vastannut kysymykseen numero: ' +i);
+    alert("Et vastannut kysymykseen numero: " +i);
     huom = 1;
   }
   if(huom == 1) return false;
   }
 
+
+
 var vastaukset = ["b", "a", "c"];
 
 for(i = 1; i <= yhteensa; i++)
 {
-  if(eval('k'+i) == vastaukset[i-1])
+  if(eval("k"+i) == vastaukset[i-1])
   {
     pisteet++;
   }
@@ -30,8 +32,8 @@ for(i = 1; i <= yhteensa; i++)
 
 
 
-  var tulokset = document.getElementById('tulokset');
-  alert('Sait ' + pisteet + ' pistettä, kun maksimi pistemäärä oli ' + yhteensa);
-  tulokset.innerHTML = '<h3>Sait <sapn>' + pisteet + '</span> pistettä, kun maksimi pistemäärä oli <span>' + yhteensa + '</span></h3>';
+  var tulokset = document.getElementById("tulokset");
+  alert("Sait " + pisteet + " pistettä, kun maksimi pistemäärä oli " + yhteensa);
+  tulokset.innerHTML = "<h3>Sait <sapn>" + pisteet + "</span> pistettä, kun maksimi pistemäärä oli <span>" + yhteensa + "</span></h3>";
   return false;
 }
