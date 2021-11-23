@@ -1,14 +1,15 @@
-const randomNumber = Math.floor(Math.random() * 10) + 1
+document.getElementById("btn").addEventListener("click", myFunction);
 
-
-function checkGuess() {
-  let myGuess = document.getElementById("guess").value;
-  if (myGuess === randomNumber) {
-    alert("You got it right!");
-  } else if (myGuess > randomNumber) {
-    alert("Your guess was " + myGuess + ". That's too high. Try Again!");
-  } else if (myGuess < randomNumber) {
-   alert("Your guess was " + myGuess + ". That's too low. Try Again!");
- }
+function myFunction() {
+  let annaNumero = document.getElementById("annaNumero").value;
+  let random = [Math.floor(Math.random()* 10)]
+  if (annaNumero == random) {
+    document.getElementById("demo").innerHTML = "Arvasit oikean numeron";
+  }
+  else if (annaNumero > random) {
+      document.getElementById("demo").innerHTML = "Arvauksesi on liian suuri";
+  }
+  else if (annaNumero < random) {
+      document.getElementById("demo").innerHTML = "Arvauksesi on liian pieni";
+  }
 }
-submitGuess.addEventListener('click', checkGuess)

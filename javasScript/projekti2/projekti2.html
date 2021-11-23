@@ -3,81 +3,51 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=""> <!-- Hakukoneille kuvaus sisällöstä-->
+    <meta name="keywords" content=""> <!-- avain sanat millä hakukone löytää-->
+    <meta name="author" content=""> <!--Kirjoittaja-->
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
-
-    <title>HALOO</title>
+    <link rel="stylesheet" href="muotoilu.css">
+    <title>Arvauspeli</title>
   </head>
   <body>
 
+  <header>
+    <h1>ARVAUSPELI</h1>
+    <p>Saatko arvattua oikean numeron?</p>
+    <p>Arvausertoja on kolme</p>
+    <p>ONNEA PELIIN!</p>
+  </header>
 
+<div class="arvaa">
   <p>arvaa numero 1-10 väliltä</p>
   <input type="number" id="annaNumero">
   <button id="btn">Enter</button>
   <p id="demo">
-
-<script>
-
-
-  document.getElementById("btn").addEventListener("click", myFunction);
-
-  function myFunction() {
-    let annaNumero = document.getElementById("annaNumero").value;
-    let random = [Math.floor(Math.random()* 10)]
-    if (annaNumero == random) {
-      document.getElementById("demo").innerHTML = "Arvasit oikean numeron";
-    }
-    else if (annaNumero > random) {
-        document.getElementById("demo").innerHTML = "Arvauksesi on liian suuri";
-    }
-    else if (annaNumero < random) {
-        document.getElementById("demo").innerHTML = "Arvauksesi on liian pieni";
-    }
-  }
+  <script src="javascript.js" charset="utf-8"></script>
+</div>
 
 
-</script>
+
+        <section>
+
+
+          <div class="numerot">
+            <button class="pallot" id="yksi" type="button" name="button">1</button>
+            <button class="pallot" id="kaksi" type="button" name="button">2</button>
+            <button class="pallot" id="kolme" type="button" name="button">3</button>
+            <button class="pallot" id="nelja" type="button" name="button">4</button>
+            <button class="pallot" id="viisi" type="button" name="button">5</button>
+            <button class="pallot" id="kuusi" type="button" name="button">6</button>
+            <button class="pallot" id="seitseman" type="button" name="button">7</button>
+            <button class="pallot" id="kahdeksan" type="button" name="button">8</button>
+            <button class="pallot" id="yhdeksan" type="button" name="button">9</button>
+            <button class="pallot" id="kymmenen" type="button" name="button">10</button>
+          </div>
+        </section>
+
+
 
 
 </body>
-</html>
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Antaa selaimelle ohjeet miten käsittelee sivun ulottuuden ja skaalauksen.-->
-    <meta name="description" content=""> <!-- Hakukoneille kuvaus sisällöstä-->
-    <meta name="keywords" content=""> <!-- avain sanat millä hakukone löytää-->
-    <meta name="author" content=""> <!--Kirjoittaja-->
-    <link rel="stylesheet" href="muotoilu.css">
-    <script src="javascript.js" charset="utf-8"></script>
-    <title>Arvauspeli</title>
-  </head>
-  <body>
-    <header>
-      <h1>ARVAUSPELI</h1>
-      <p>Saatko arvattua tietokoneen ajatteleman numeron?</p>
-      <p>Arvausertoja on kolme</p>
-      <p>ONNEA PELIIN!</p>
-    </header>
-    <section>
-      <div class="numerot">
-        <button class="pallot" id="yksi" type="button" name="button">1</button>
-        <button class="pallot" id="kaksi" type="button" name="button">2</button>
-        <button class="pallot" id="kolme" type="button" name="button">3</button>
-        <button class="pallot" id="nelja" type="button" name="button">4</button>
-        <button class="pallot" id="viisi" type="button" name="button">5</button>
-        <button class="pallot" id="kuusi" type="button" name="button">6</button>
-        <button class="pallot" id="seitseman" type="button" name="button">7</button>
-        <button class="pallot" id="kahdeksan" type="button" name="button">8</button>
-        <button class="pallot" id="yhdeksan" type="button" name="button">9</button>
-        <button class="pallot" id="kymmenen" type="button" name="button">10</button>
-      </div>
-    </section>
-
-  </body>
 </html>

@@ -1,6 +1,6 @@
 function lahetaVastaukset() {
 
-var yhteensa = 3;
+var yhteensa = 5;
 var pisteet = 0;
 var huom = 0;
 
@@ -10,7 +10,7 @@ var k3 = document.forms[”kyselyLomake][”k3”].value;
 
 for(i= 1; i <= yhteensa; i++)
 {
-  if(eval('k'+i) == null | | eval('k'+i) =='')
+  if(eval('k'+i) == null || eval('k'+i) =='')
   {
     alert('Et vastannut kysymykseen numero: ' +i);
     huom = 1;
@@ -18,7 +18,7 @@ for(i= 1; i <= yhteensa; i++)
   if(huom == 1) return false;
   }
 
-var vastaukset = ["b", "a", "d"];
+var vastaukset = ["b", "a", "c"];
 
 for(i = 1; i <= yhteensa; i++)
 {
