@@ -1,37 +1,34 @@
-header {
-  width: 20%;
-  height: auto;
-  margin-left: 50px;
+header, section {
   text-align: center;
-  background-color: red;
+}
+
+#sisalto {
+  width: 50%;
+  background-color: #199fdb;
+  margin: auto;
+  margin-top: 2%;
+  overflow: auto;
+  padding: 20px;
 }
 
 header h1 {
   font-size: 3em;
 }
 
-.arvaa {
-  width: 20%;
-  height: auto;
-  margin-left: 50px;
-  background-color: blue;
-}
-
-section {
-  width: 95%;
-  height: auto;
-  margin-top: 100px;
-  margin-left: 100px;
+#numerot {
+  width: 80%;
+  height: 100px;
+  margin-top: 300px;
+  margin-left: 0;
+  margin-right: 0;
   background-color: yellow;
 }
 
-section h2, header {
-  margin-left: 50px;
-}
+
 
 .pallot {
-  width: 100px;
-  height: 100px;
+  width: 20px;
+  height: 20px;
   text-align: center;
   margin: 50px auto;
   margin-right: 30px;
@@ -42,9 +39,9 @@ section h2, header {
     #cfffff,
     #cccccc
     );
-  box-shadow: 3px 8px 6px 8px #888888;
+  box-shadow: 1px 6px 4px 6px #888888;
   float: left;
-  font-size: 3em;
+  font-size: 2em;
   }
 
 .numerot p {
