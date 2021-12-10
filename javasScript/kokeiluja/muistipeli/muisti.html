@@ -6,30 +6,29 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="muisti.css">
-
-    <title>NELILASKIN</title>
+    <script src="muisti.js" charset="utf-8"></script>
+    <title>Muistipeli</title>
   </head>
 
     <body>
-    <section>
-        <div class="alusta">
-            <div class="buttons">
 
-              <div class="button"><img src="kissa.webp" alt="kissa"></div>
-              <div class="button"><img src="Mountain.jpg" alt="Vuori"></div>
-              <div class="button"><img src="snowboarding.jpg" alt="lumilautailu"></div>
-              <div class="button"><img src="kissa2.jpg" alt="kora"></div>
-              <div class="button"><img src="kissa.webp" alt="kissa"></div>
-              <div class="button"><img src="Mountain.jpg" alt="Vuori"></div>
-              <div class="button"><img src="snowboarding.jpg" alt="lumilautailu"></div>
-              <div class="button"><img src="kissa2.jpg" alt="kora"></div>
+      <head>
+        <h1>Tervetuloa!</h1>
+        <p>Valitse muistipeli, jonka haluat pelata</p>
+      </head>
 
+      <section>
+        <label for="valitse"></label>
+        <select class="muistipeli" id="valitseKoko">
+          <option value="selected disabled hidden">Valitse pelin koko</option>
+          <option value="4x4">4x4</option>
+          <option value="4x6">4x6</option>
+          <option value="6x6">6x6</option>
+          <button type="button" onclick="valitse" name="Pelaamaan"></button>
+        </select>
+      </section>
 
-            </div>
-        </div>
-    </section>
-    <script src="muisti.js" charset="utf-8"></script>
-</body>
+    </body>
 
 
 </html>
