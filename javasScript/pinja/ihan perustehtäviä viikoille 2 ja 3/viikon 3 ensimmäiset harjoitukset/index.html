@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <script src="javascript.js" charset="utf-8"></script>
     <title></title>
   </head>
   <body>
@@ -12,7 +13,24 @@
       asti poislukien 0:n</p>
     <label for="annaLuku">Anna parillinen luku: </label>
     <input type="number" id="annaLuku">
-    <button type="button" onclick="tehtava1()">Paina</button>
-    <p id="tulostaLuvut"></p>
+    <button type="button" name="button" onclick="tehtava()">Paina</button>
+    <p id="tulostaLuvut"></p><br><br><br>
+
+
+    <h1>tehtävä pariton</h1>
+    <label for="luku">Anna pariton luku: </label>
+    <input type="number" id="luku">
+    <button type="button" name="button" onclick="luvut()">Paina</button>
+    <p id="luvut"><br><br><br>
+
+    <h1>Tehtävä 2</h1>
+    <p>Kirjoita ohjelma, joka muuntaa käyttäjän antaman sanan salasanaksi
+      siten, että laittaa joka toiseksi kirjaimeksi ison Ö-kirjaimen, eli
+      jos sana on Kaappi --> KÖaÖaÖpÖpÖiÖ </p>
+    <label for="annaSana">Anna sana: </label>
+    <input type="text" id="annaSana">
+    <button type="button" name="button" onclick="salasana()">Muuta salasanaksi</button>
+    <p id="tulostaSana"></p><br><br><br>
+
   </body>
 </html>
