@@ -32,5 +32,90 @@
     <button type="button" name="button" onclick="salasana()">Muuta salasanaksi</button>
     <p id="tulostaSana"></p><br><br><br>
 
+    <h1>Tehtävä 3</h1>
+    <p>Kirjoita ohjelma, joka tarkastaa, onko antamassasi sanassa ö-kirjainta
+      ja kirjoittaa vastaukseksi joko: on tai ei ole</p>
+    <label for="Sana">Anna sana: </label>
+    <input type="text" id="Sana">
+    <button type="button" name="button" onclick="onkoKirjain()">Tarkista</button>
+    <p id="onkoKirjainta"></p><br><br><br>
+
+    <h1>Tehtävä 4</h1>
+    <p>Kirjoita ohjelma, joka laskee annetun luvun kertoman
+      (esim: 4 -> 4*3*2*1 = 24)</p>
+    <label for="numero">Anna luku, josta lasketaan kertoma: </label>
+    <input type="text" id="numero">
+    <button type="button" name="button" onclick="kertoma()">Enter</button>
+    <p id="tulostaKertoma"></p><br><br><br>
+
+    <h1>Tehtävä 5</h1>
+    <p>Kirjoita ohjelma, joka tulostaa näytölle luvut 1-100, kuitenkin siten,
+      että jos luku on 3:lla jaollinen, <br> tulostetaan hip ja viidellä jaollinen
+      tulostetaan heijaa ja jos sekä viidellä että kolmella jaollinen,
+      tulostetaan hipheijaa </p>
+    <button type="button" name="button" onclick="hipheijaa()">Tulosta</button>
+    <p id="tulostaHipHei"></p><br><br><br>
+
+    <h1>Tehtävä 6</h1>
+    <p>Kirjoita ohjelma, joka tulostaa 10 ensimmäistä numeroa</p>
+    <button type="button" name="button" onclick="kymmenen()">10 ensimmäistä</button>
+    <p id="tulosta10"></p><br><br><br>
+
+    <h1>Tehtävä 7</h1>
+    <p>Kirjoita ohjelma, joka laskee 10 ensimmäistä numeroa yhteen</p>
+    <button type="button" name="button" onclick="kymmenenYhteen()">Laske 10 ensimmäistä yhteen</button>
+    <p id="kymmenenSumma"></p><br><br><br>
+
+    <h1>tehtävä 8</h1>
+    <p>Kirjoita ohjelma, joka kysyy käyttäjältä kahta lukua ja laskee ensimmäisen
+      potenssiin toinen esim. 5 ja 2 = 52 = 25</p>
+    <label for="luvut">Anna korotettava luku: </label>
+    <input type="number" id="korotettava">
+    <label for="luvut">Anna potenssi: </label>
+    <input type="number" id="potenssi">
+    <button type="button" name="button" onclick="potenssiin()">Paina</button>
+    <p id="tulostaPotenssi"><br><br><br>
+
+    <!--<h1>tehtävä 9</h1>
+    <label for="<pieninSuurin">Kirjoita ohjelma, joka etsii annetusta luvuista suurimman ja pienimmän arvon </label>
+    <p>Anna 1. luku: <input type="number" id="taulukko[0]"></p>
+    <p>Anna 2. luku: <input type="number" id="taulukko[1]"></p>
+    <p>Anna 3. luku: <input type="number" id="taulukko[2]"></p>
+    <p>Anna 4. luku: <input type="number" id="taulukko[3"></p>
+    <p>Anna 5. luku: <input type="number" id="taulukko[4]"></p>
+    <button type="button" name="button" onclick="PieniSuuri()">Etsi suurin ja pienin</button>
+    <p id="tulostaSuurin"></p><br><br><br>-->
+
+    <h1>tehtävä 9</h1>
+    <label for="<pieninSuurin">Kirjoita ohjelma, joka etsii annetusta luvuista suurimman ja pienimmän arvon </label>
+    <p>Anna 1. luku: <input type="number" id="eka"></p>
+    <p>Anna 2. luku: <input type="number" id="toka"></p>
+    <p>Anna 3. luku: <input type="number" id="kolmas"></p>
+    <p>Anna 4. luku: <input type="number" id="neljas"></p>
+    <p>Anna 5. luku: <input type="number" id="viides"></p>
+    <button type="button" name="button" onclick="PieniSuuri()">Etsi suurin ja pienin</button>
+    <p id="tulostaPienin">
+    <p id="tulostaSuurin"></p><br><br><br>
+
+    <h1>Tehtävä 10</h1>
+    <p>Muokataan salasalatehtävää siten, että se arpoo kirjaimen Ö:n sijasta</p>
+    <label for="Sana">Anna muokattava salasana: </label>
+    <input type="text" id="sanaMuokattu">
+    <button type="button" name="button" onclick="muokkaaSalasana()">Tarkista</button>
+    <p id="tulostaSalasana"></p><br><br><br>
+
+    <h1>Tehtävä 11</h1>
+    <p>Tee ohjelma, joka pyytää käyttäjältä kahta numeroa (jälkimmäisen tulee
+      olla isompi) ja tulostaa tuolla välillä parilliset ja parittomat numerot
+      sekä niiden summat</p>
+    <label for="lukuPieni">Anna pienempi luku: </label>
+    <input type="number" id="lukuPieni">
+    <label for="lukuIso">Anna suurempi luku: </label>
+    <input type="number" id="lukuIso">
+    <button type="button" name="button" onclick="parillisetParittomat()">Paina</button>
+    <p id="tulostaEka"><br>
+
+
+
   </body>
 </html>
