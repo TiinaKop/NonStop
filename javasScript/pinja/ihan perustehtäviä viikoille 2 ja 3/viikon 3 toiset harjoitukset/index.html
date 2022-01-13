@@ -11,18 +11,31 @@
     <p>Tee ohjelma, jolle voi syöttää Scrabble-pelin sanan
       ja ohjelma laskee kirjain pisteet seuraavasti</p>
     <p>
-    A, E, I, N, S, T = 1p <br>
-    O, Ä, K, L = 2p<br>
-    U, M = 3p<br>
-    Y, H, J, P, R, V = 4p<br>
-    Ö, D = 7p<br>
-    B, F, G = 8p<br>
-    C = 10p<br>
-    loput kirjaimet = 12p<br>
+      <ul>
+          <li>A, E, I, N, S, T = 1p</li>
+          <li>O, Ä, K, L = 2p</li>
+          <li>U, M = 3p</li>
+          <li>Y, H, J, P, R, V = 4p</li>
+          <li>Ö, D = 7p</li>
+          <li>B, F, G = 8p</li>
+          <li>C = 10p</li>
+          <li>loput kirjaimet = 12p</li>
+      </ul>
     </p>
+    <form class="" action="index.html" method="post">
     <label for="sana">Anna sana: </label>
     <input type="text" id="KayttajanSana">
-    <button type="button" name="button" onclick="scrabble">Laske kirjainpisteet</button>
+    <button type="button" name="button" onclick="scrabble()">Laske kirjainpisteet</button>
     <div id="SanaPisteet"></div>
+    </form>
+
+    <h1>Tehtävä 2</h1>
+    <p>Tee ohjelma, joka arpoo lottonumerot (7 kpl)<p>
+    <button type="button" name="button" onclick="lotto()">Arvo numerot</button>
+    <div id="TulostaLotto">
+
+    </div>
+
+
   </body>
 </html>

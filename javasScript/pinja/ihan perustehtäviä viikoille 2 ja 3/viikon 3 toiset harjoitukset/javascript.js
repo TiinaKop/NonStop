@@ -1,29 +1,81 @@
 function scrabble() {
-let sana = document.getElementById('KayttajanSana').value;
-let pisteet = 0;
+var sana = document.getElementById('KayttajanSana').value;
+var pisteet = 0;
+for (var i = 0; i < sana.length; i++) {
+  switch (sana[i])
+case 'a':
+case 'e':
+case 'i':
+case 'n':
+case 's':
+case 't':
+case 'A':
+case 'E':
+case 'I':
+case 'N':
+case 'S':
+case 'T':
+  pisteet++;
+  break;
+case 'o':
+case 'Ã¤':
+case 'k':
+case 'l':
+case 'O':
+case 'Ã„':
+case 'K':
+case 'L':
+  pisteet+=2;
+  break;
+case 'u':
+case 'm':
+case 'U':
+case 'M':
+  pisteet+=3;
+  break;
+case 'y':
+case 'h':
+case 'j':
+case 'p':
+case 'r':
+case 'v':
+case 'Y':
+case 'H':
+case 'J':
+case 'P':
+case 'R':
+case 'V':
+  pisteet+=4;
+  break;
+case 'Ã¶':
+case 'd':
+case 'Ã–':
+case 'D':
+  pisteet+=7;
+  break;
+case 'b':
+case 'f':
+case 'g':
+case 'B':
+case 'F':
+case 'G':
+  pisteet+=8;
+  break;
+case 'c':
+case 'C':
+  pisteet+=10;
+  break;
+default:
+  pisteet+=12;
+}
+document.getElementById('SanaPisteet').innerHTML = "Sanan pisteet ovat: " + pisteet;
+}
 
-if(sana in A || E || I || N || S || T){
-pisteet+= 1; }
-else if(sana in O || Ä || K || L) {
-pisteet+= 2; }
-else if (sana in U|| M) {
-pisteet+= 3;
-}
-else if (sana in Y || H || J || P || R || V) {
-pisteet+= 4;
-}
-else if (sana in Ö|| D) {
-pisteet+= 7;
-}
-else if (sana in B|| F || G) {
-pisteet+= 8;
-}
-else if (sana in C) {
-pisteet+= 10;
-}
-else {
-pisteet+= 12;
+function arvoNumerot() {
+  return Math.floor(Math.random()*40 + 1);
 }
 
-document.getElementById('Sanapisteet').innerHTML = pisteet;
+function lotto() {
+  for (var i = 0; i < 7; i++)
+  document.getElementById('TulostaLotto').innerHTML = lottonumerot;
 }
