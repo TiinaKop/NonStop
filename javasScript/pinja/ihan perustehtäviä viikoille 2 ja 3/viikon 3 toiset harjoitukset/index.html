@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css.css">
     <script src="javascript.js" charset="utf-8"></script>
     <title></title>
   </head>
@@ -32,10 +33,46 @@
     <h1>Tehtävä 2</h1>
     <p>Tee ohjelma, joka arpoo lottonumerot (7 kpl)<p>
     <button type="button" name="button" onclick="lotto()">Arvo numerot</button>
-    <div id="TulostaLotto">
+    <div id="TulostaLotto"></div>
 
+    <h1>Tehtävä 3</h1>
+    <p>Tee ohjelma, joka muuntaa määritetyn (javascriptissä) 2-uloitteisen taulukon
+      taulukkomuotoon.
+      Esimerkiksi [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]]<p>
+    <button type="button" name="button" onclick="taulukko()">Muunna taulukoksi</button>
+    <div id="Tulostataulukko"></div>
+
+    <h1>Tehtävä 3 uusi</h1> <!-- TAULUKKO PELKÄLLÄ CSS:LLÄ -->
+    <div class="alusta">
+      <div class="buttons">
+        <div class="button">1</div>
+        <div class="button">2</div>
+        <div class="button">1</div>
+        <div class="button">24</div>
+        <div class="button">8</div>
+        <div class="button">11</div>
+        <div class="button">9</div>
+        <div class="button">4</div>
+        <div class="button">7</div>
+        <div class="button">0</div>
+        <div class="button">7</div>
+        <div class="button">27</div>
+        <div class="button">7</div>
+        <div class="button">4</div>
+        <div class="button">28</div>
+        <div class="button">14</div>
+        <div class="button">3</div>
+        <div class="button">10</div>
+        <div class="button">26</div>
+        <div class="button">7</div>
+      </div>
     </div>
-
-
   </body>
 </html>
+
+
+<h1>Tehtävä 4</h1>
+<p>Tee ohjelma, joka tekee taulukon kaikista korttipakan korteista
+  (2 sisäkkäistä silmukkaa) ja sen jälkeen sekoittaa "pakan" ja arpoo 5 korttia sieltä<p>
+<button type="button" name="button" onclick="korttipakka()">Muunna taulukoksi</button>
+<div id="TulostaKortit"></div>

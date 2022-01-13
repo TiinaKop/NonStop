@@ -1,0 +1,23 @@
+.alusta {
+  max-width: 200px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.button {
+  border: 0.5px solid;
+}
+
+table{
+text-align: right;
+border-collapse: collapse;
+}
+
+td{
+  width: 20px;
+}

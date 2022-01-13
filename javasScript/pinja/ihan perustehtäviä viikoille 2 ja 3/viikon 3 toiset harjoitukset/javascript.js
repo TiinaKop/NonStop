@@ -2,7 +2,7 @@ function scrabble() {
 var sana = document.getElementById('KayttajanSana').value;
 var pisteet = 0;
 for (var i = 0; i < sana.length; i++) {
-  switch (sana[i])
+  switch (sana[i]) {
 case 'a':
 case 'e':
 case 'i':
@@ -70,12 +70,42 @@ default:
 }
 document.getElementById('SanaPisteet').innerHTML = "Sanan pisteet ovat: " + pisteet;
 }
-
-function arvoNumerot() {
-  return Math.floor(Math.random()*40 + 1);
 }
 
+
 function lotto() {
-  for (var i = 0; i < 7; i++)
-  document.getElementById('TulostaLotto').innerHTML = lottonumerot;
+  var numerot = [];
+  var temp;
+  for (var j = 0; j < 7; j++) {
+    temp = Math.floor(Math.random()*40) + 1;
+    numerot[j] = temp;
+  }
+  numerot.sort((a,b) => a-b);
+  document.getElementById('TulostaLotto').innerHTML = numerot;
+}
+
+
+function taulukko() {
+  var numbers = [];
+  numbers = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
+  var taulu = '<table border="1">';
+  for(var k = 0; k < numbers.length; k++) { // numeroiden määrä [] vaakaan
+    taulu += '<tr>'; //
+    for(var l = 0; l < numbers[k].length; l++) { // numeroiden määrä [[]] pystyyn
+      taulu += '<td>' + numbers[k][l] + '</td>';
+    }
+    taulu += '</tr>';
+  }
+  taulu += '</table>';
+  document.getElementById('Tulostataulukko').innerHTML = taulu;
+}
+
+
+function korttipakka() {
+var kortit = ;
+
+var sekoita = ;
+
+
+  document.getElementById('TulostaKortit').innerHTML = kortit;
 }
