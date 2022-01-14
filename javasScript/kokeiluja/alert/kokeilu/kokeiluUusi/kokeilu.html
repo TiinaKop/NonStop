@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="kokeilu.css">
+    <script src="kokeilu.js" charset="utf-8"></script>
+    <title></title>
+  </head>
+  <body>
+
+    <h1>Numerot 1-10</h1>
+    <button type="button" name="button" onclick="kymmenen()">Paina</button><br><br>
+    <div id="TulostaNumerot"></div>
+
+    <h1>Numerot 1-10 summa</h1>
+    <button type="button" name="button" onclick="kymmenenSumma()">Paina</button><br><br>
+    <div id="TulostaSumma"></div>
+
+    <h1>Kolme kertaa</h1>
+    <button type="button" name="button" onclick="kolmeSanaa()">Paina</button><br><br>
+    <div id="TulostaSanat"></div>
+
+    <h1>Kolme kertaa uusi</h1>
+    <button type="button" name="button" onclick="kolmeSanaaUusi()">Paina</button><br><br>
+    <div id="TulostaSanatUusi"></div>
+
+    <h1>Numerot järjestykseen</h1>
+    <p>Tee ohjelma, joka pyytää käyttäjältä kolmea numeroa ja laittaa ne järjestykseen</p>
+    <form class="numerot" action="index.html" method="post">
+        <label for="numerot">syötä numero 1</label>
+        <input type="number" id="yksi">
+        <label for="numerot">syötä numero 2</label>
+        <input type="number" id="kaksi">
+        <label for="numerot">syötä numero 3</label>
+        <input type="number" id="kolme">
+    <button type="button" name="button" onclick="numerotJarjestykseen()">Järjestä luvut</button><br><br>
+    <div id="jarjestaNumerot"></div>
+    </form>
+
+  </body>
+</html>

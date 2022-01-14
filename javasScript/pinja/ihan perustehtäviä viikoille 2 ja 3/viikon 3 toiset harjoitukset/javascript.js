@@ -90,7 +90,7 @@ function taulukko() {
   numbers = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
   var taulu = '<table border="1">';
   for(var k = 0; k < numbers.length; k++) { // numeroiden määrä [] vaakaan
-    taulu += '<tr>'; //
+    taulu += '<tr>';
     for(var l = 0; l < numbers[k].length; l++) { // numeroiden määrä [[]] pystyyn
       taulu += '<td>' + numbers[k][l] + '</td>';
     }
@@ -100,12 +100,26 @@ function taulukko() {
   document.getElementById('Tulostataulukko').innerHTML = taulu;
 }
 
-
 function korttipakka() {
-var kortit = ;
-
-var sekoita = ;
-
-
-  document.getElementById('TulostaKortit').innerHTML = kortit;
+var pakka = [''];
+var maat = ['&#9828;', '&#9827;', '&#9826;', '&#9825;'];
+var numerot = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+var laskuri = 0;
+for (var s = 0; s < maat.length; s++) {
+  for (var t = 0; t < numerot.length; t++) {
+    if (s == maat.length - 1 && s == numerot.length -1) {
+      pakka[laskuri] = maat[s] + numerot[t];
+    }
+    else {
+      pakka[laskuri] = maat[s] + numerot[t];
+      laskuri++;
+    }
+  }
+}
+var kortit = [];
+for (var v = 0; v < 5; v++) {
+  temp = pakka[Math-floot(Math.random()*52)];
+  kortit[1] = temp;
+}
+document.getElementById('TulostaKortit').innerHTML = kortit;
 }
