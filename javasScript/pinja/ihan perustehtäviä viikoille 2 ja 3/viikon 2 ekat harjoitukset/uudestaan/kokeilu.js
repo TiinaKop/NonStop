@@ -131,3 +131,17 @@ function millaAjaa() {
     document.getElementById('tulostaMenopeli').innerHTML = "Voit ajaa polkupyörällä";
   }
 }
+
+
+function kieli() {
+  var kieli = document.getElementById('pudotus').value;
+  if (kieli == "englanti") {
+    document.getElementById('tulostaKieli').innerHTML = "Hello world";
+    }
+  else if (kieli == "ruotsi") {
+    document.getElementById('tulostaKieli').innerHTML = "Hej världen";
+    }
+  else {
+    document.getElementById('tulostaKieli').innerHTML = "Hola Mundo";
+  }
+}
