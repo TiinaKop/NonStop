@@ -171,6 +171,38 @@ function salasanaRandom() {
 document.getElementById('tulostaSalasanaR').innerHTML = salasana;
 }
 
+
+
+
+
+function Sp() {
+  var taulu = [], temp;
+  for (var w = 0; w < 5; w++) {
+    temp = document.getElementById('k['+w+']').value;
+    temp = parseInt(temp);
+    taulu.push(temp);
+  }
+  taulu = taulu.sort((a,b)=>a-b);
+  document.getElementById('tulosSp').innerHTML = "Pienin " + taulu[0] + "<br>Suurin " + taulu[taulu.length-1];
+}
+
+
+function salasanaRandom() {
+  var eka, toka;
+  var sana = document.getElementById('kayttajanSanaR');
+  var taulukko = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j','k', 'l', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u','v', 'x', 'y', 'z', 'Ã¥', 'Ã¤', 'Ã¶', 'w'];
+  var taulu = [];
+  for (var v = 0; v < sana.length; v++) {
+    eka = sana[v]; // ekaan liitetään kirjaimet
+    taulu.push(eka); // tauluun liitetään eka, eli kirjaimet
+    var aakkoset = Math.floor(Math.random()*taulukko.length);
+    toka = taulukko[aakkoset]; // tokaan lisätään taulukko,jossa on random aakkoset
+    taulu.push(toka); // tauluun lisätään random aakkoset
+  }
+  var salasana = taulu.join(""); // kaikki taulu.push liitetään yhteen, eli salasanaan
+  document.getElementById('tulostaSalasanaR').innerHTML = salasana;
+}
+
 function salasanaRandom() {
   var osayksi, osakaksi;
   var sana = document.getElementById('kayttajanSanaR').value;
@@ -186,3 +218,36 @@ function salasanaRandom() {
   var salasana = taulu.join("");
 document.getElementById('tulostaSalasanaR').innerHTML = salasana;
 }
+
+
+
+function pariPariton() {
+  var eka, toka, parillinenLuku, parintonLuku, parillisetSumma=0, parittomatSumma=0, parillisetLuvut='', parittomatLuvut='';
+  eka = parseInt(document.getElementById('numEka').value);
+  toka = parseInt(document.getElementById('numToka').value);
+  if(eka%2 == 0)
+  {
+    parillinenLuku = eka;
+  }
+  else {
+    parillinenLuku = eka+1;
+  }
+  for(var b = parillinenLuku; b<=toka; b+=2)
+  {
+    parillisetLuvut += b + ' ';
+    parillisetSumma += b;
+  }
+  if(eka%2 == 0)
+  {
+    paritonLuku = eka+1;
+  }
+  else {
+    paritonLuku = eka;
+  }
+  for(var r = paritonLuku; r<=toka; r+=2)
+  {
+    parittomatLuvut += r + ' ';
+    parittomatSumma += r;
+  }
+    document.getElementById('tulostaPariton').innerHTML = '<p>Parilliset numerot: ' + parillisetLuvut +' ja niiden summa: ' + parillisetSumma + '</p><p>Parittomat luvut: ' + parittomatLuvut + ' ja niiden summa: '+ parittomatSumma + '</p>'
+  }
