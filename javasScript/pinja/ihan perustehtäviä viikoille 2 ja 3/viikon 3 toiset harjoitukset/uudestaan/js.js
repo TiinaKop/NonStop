@@ -74,3 +74,28 @@ for (var i = 0; i < sana.length; i++) {
       taulu += '</table>';
       document.getElementById('taulukko').innerHTML = taulu;
     }
+
+
+    function korttipakka() {
+    var pakka = [''];
+    var maat = ['&#9828;', '&#9827;', '&#9826;', '&#9825;'];
+    var numerot = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+    var laskuri = 0;
+    for (var s = 0; s < maat.length; s++) { // 4
+      for (var t = 0; t < numerot.length; t++) { // 13
+        if (s == maat.length -1 && t == numerot.length -1) {
+          pakka[laskuri] = maat[s] + numerot[t];
+        }
+        else {
+          pakka[laskuri] = maat[s] + numerot[t];
+          laskuri++;
+        }
+      }
+    }
+    var kortit = [];
+    for (var v = 0; v < 5; v++) {
+      temp = pakka[Math.floor(Math.random()*52)];
+      kortit[v] = temp;
+    }
+    document.getElementById('kortit').innerHTML = kortit;
+    }
