@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="logalStorage.js" charset="utf-8"></script>
+    <title>Paikallinen tiedosto</title>
+  </head>
+  <body>
+    <div id="formDiv">
+          <form id="carForm">
+      <h1>Kirjasto</h1>
+      <label for="key">Avain: </label><br>
+      <input type="text" id="key" placeholder="Key" required>
+      <br><br>
+      <label for="bookGenre">Kirjan kategoria: </label><br>
+      <input type="text" id="bookGenre" placeholder="bookGenre" required autofocus>
+      <br><br>
+      <label for="book">Kirjailija: </label><br>
+      <input type="text" id="writer" placeholder="Write" required autofocus>
+      <br><br>
+      <label for="price">Hinta: </label><br>
+      <input type="text" id="price" placeholder="Price" required>
+      <br><br>
+      <button type="submit" onclick="store()">Tallenna arvot</button>
+      </form>
+      <br><br>
+      <label for="retrieveKey">Anna hakuavain</label><br>
+      <input type="text" id="retrieveKey" placeholder="retrieveKey" required>
+      <br><br>
+      <button id="retrieveButton">Hae arkistosta</button><br>
+      <br><br>
+      <label for="removeKey">Anna poistettavan tiedoston avain</label>
+      <br><br>
+      <input type="text" id="removeKey" placeholder="removeKey" required>
+      <br><br>
+      <button id="removeButton">Poista tietue</button>
+      <br><br><br>
+      <button id="clearButton">Poista kaikki tietueet</button>
+      </div>
+      <br><br>
+      <div id="retrieve"></div>
+  </body>
+</html>
