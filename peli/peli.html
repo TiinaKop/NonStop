@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="Pictures/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+        <script type="text/javascript" src="Javascript/script.js"></script>
+        <script type="text/javascript" src="Javascript/point.js"></script>
+        <script type="text/javascript" src="Javascript/barrier.js"></script>
+        <script type="text/javascript" src="Javascript/player.js"></script>
+        <script type="text/javascript" src="Javascript/display.js"></script>
+        <script type="text/javascript" src="Javascript/component.js"></script>
+        <script type="text/javascript" src="Javascript/settings.js"></script>
+
+        <title>Javascript Game</title>
+    </head>
+
+    <body onload="displayInfoText()">
+        <!-- This canvas will be deleted after game begins -->
+        <canvas id="fakeCanvas" width="580" height="400"></canvas>
+
+        <script type="text/javascript">
+            function displayInfoText() {
+                var canvas = document.getElementById("fakeCanvas");
+                var context = canvas.getContext("2d");
+
+                context.font = "20px Montserrat";
+                context.fillText("Start game by pressing play button", (canvas.width / 2) - 180, (canvas.height / 2) + 5);
+            }
+        </script>
+
+        <div class="control-panel">
+            <div class="playerValues">
+                <p id="playerScore">Score: 0</p>
+                <p id="playerStage">Stage: 0</p>
+                <p id="playerMultiplier">Multiplier: 1x</p>
+
+                <div class="reloadImg">
+                    <img id="reload" src="Pictures/refresh.png" onclick="retry()">
+                </div>
+            </div>
+
+            <div id="startBtn" class="startBtn">
+                <img onclick="clearCanvas(); removeButton(); startGame();" src="Pictures/play-button.png">
+            </div>
+        </div>
+    </body>
+
+</html>
