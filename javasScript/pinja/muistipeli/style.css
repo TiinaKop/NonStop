@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #74ebd5;
+  background: -webkit-linear-gradient(to right, #acb6e5, #74ebd5);
+  background: linear-gradient(to right, #acb6e5, #74ebd5);
+  display: flex;  /* tästä alaspäin keskittää pelin */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section {
+  display: grid; /* luodaan taulukko  */
+  grid-template-columns: repeat(4, 8rem); /* (4 saraketta, 8 kokoa pitkä*/
+  grid-template-rows: repeat(4, 8rem); /* 4 riviä, 8 kokoa pitkä */
+  grid-gap: 2rem; /* korttien väleistä tulee 2 rem kokoiset */
+  perspective: 1000px;   /* kuinka kortit kääntyy, kun ne kääntyvät, pitää aluksi määritellä .card transition */
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;  /* korttien kuvat näkyvät käänätäessä */
+  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);  /* ylikääntyminen */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+}
+
+
+.face,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+}
+
+
+.back {
+  background: darkslateblue;
+  backface-visibility: hidden; /* kuvat näkyvät kun kortin toisen väri on piilotettu */
+}
+
+.toggleCard {
+  transform: rotateY(180deg); /* painaessa kortti kääntyy ympäri */
+}
+
+.face {
+  transform: rotateY(-180deg); /* ei tehyt mitään.. */
+}
