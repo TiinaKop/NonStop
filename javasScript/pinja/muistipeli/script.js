@@ -1,13 +1,13 @@
 //Grab a couple of things
-const section = document.querySelector("section");
-const playerLivesCount = document.querySelector("span");
+const section = document.querySelector("section");  // valitsee sectionin, jotta siihen voi liittää jotain
+const playerLivesCount = document.querySelector("span"); // sama kuin yllä
 let playerLives = 6;
 
 //Link text
-playerLivesCount.textContent = playerLives;
+playerLivesCount.textContent = playerLives; // sijoitetaan playerLivesCount playerLivesiin
 
 //Generate the object
-const getData = () => [
+const getData = () => [ // tehdään getDatasta funktio, luodaan kuvat
     {imgSrc: "./images/beatles.jpeg", name: "beatles"},
     {imgSrc: "./images/blink182.jpeg", name: "blink182"},
     {imgSrc: "./images/ccr.jpeg", name: "ccr"},
@@ -27,16 +27,16 @@ const getData = () => [
 ];
 
 //Randomize
-const randomize = () => {
+const randomize = () => { // tehdään randomizesta funktio, joka sekoiittaa kuvat
     const cardData = getData();
-    cardData.sort(() => Math.random() - 0.5);
+    cardData.sort(() => Math.random() - 0.5); // järjestellä
     return cardData;
 };
 
 //Card Generator Function
 const cardGenerator = () => {
     const cardData = randomize();
-    //Generate the HTML
+    //Generate the HTML / luodaan html osioita
     cardData.forEach((item) => {
         const card = document.createElement("div");
         const face = document.createElement("img");
@@ -45,9 +45,9 @@ const cardGenerator = () => {
         face.classList = "face";
         back.classList = "back";
         //Attach the info to the cards
-        face.src = item.imgSrc;
+        face.src = item.imgSrc; // liittää kuvat kortteihin
         card.setAttribute("name", item.name);
-        //Attach the cards to the section
+        //Attach the cards to the section / liittää kortit sectioniin
         section.appendChild(card);
         card.appendChild(face);
         card.appendChild(back);
