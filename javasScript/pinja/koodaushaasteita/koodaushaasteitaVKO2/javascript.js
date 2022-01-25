@@ -54,3 +54,15 @@ switch (day) {
 }
 document.getElementById('TulostaKuukausi').innerHTML = text;
 }
+
+
+function tiedot(etunimi, sukunimi, puh, osoite) {
+  this.etunimi = etunimi,
+  this.sukunimi = sukunimi,
+  this.puh = puh,
+  this.osoite = osoite
+
+var Marika = new tiedot("Marika", "Koponen", "0407432100", "Katu 1");
+console.log(Marika.etunimi);
+document.getElementById('tiedot').innerHTML = Marika;
+}
