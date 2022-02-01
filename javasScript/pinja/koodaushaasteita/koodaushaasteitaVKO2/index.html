@@ -31,35 +31,47 @@
     <button type="button" name="button" onclick="kuukausi()">Paina</button>
     <div id="TulostaKuukausi">
 
-      <h1>Tehtävä 4</h1>
-      <p>Kirjoita funktio, johon voi syöttää osoitetietoja (etunimi, sukunimi, lähiosoite,
-      postinumero, postitoimipaikka, puhelin, sähköposti) ja syötä sitten vähintään 3:n henkilön
-      tiedot funktioon. Esim. var Jyri = uusi osoiteRekisteri(”Jyri”, ”Lindroos”, ”Keskikatu 3”,
-      ”04200”, ”Kerava”, ”040 1744562”, ”jyri.lindroos@keuda.fi”);</p>
 
-      <button type="button" onclick="tiedot()">Tulosta</button>
-      <div id="tiedot"></div>
+
+
+        <h1>Tehtävä 6</h1>
+        <p>Kirjoita funktio, joka arvostelee automaattisesti opiskelijoiden kokeet seuraavasti:
+            < 50 Hylätty
+            < 60 T1
+            < 70 T2
+            < 80 H3
+            < 90 H4
+            < 100 K5
+            Tulosta sen jälkeen funktiolla seuraavat tulokset: arvosana(Daniel, 80)
+
+            Daniel sai kokeesta 80 pistettä --> Daniel H4 (nuolen jälkeinen osa tulostuu)
+            Viivi sai kokeesta 77 pistettä --> Viivi H3
+            Tiina sai kokeesta 88 pistettä --> Tiina H4
+            Ismael sai kokeesta 95 pistettä --> Ismael K5
+            Tuomas sai kokeesta 68 pistettä --> Tuomas T2</p>
+          <p>Anna nimi: <input type="text" id="B[0]"> Anna arvosana: <input type="text" id="A[0]"></p>
+          <p>Anna nimi: <input type="text" id="B[1]"> Anna arvosana: <input type="text" id="A[1]"></p>
+          <p>Anna nimi: <input type="text" id="B[2]"> Anna arvosana: <input type="text" id="A[2]"></p>
+          <p>Anna nimi: <input type="text" id="B[3]"> Anna arvosana: <input type="text" id="A[3]"></p>
+          <p>Anna nimi: <input type="text" id="B[4]"> Anna arvosana: <input type="text" id="A[4]"></p>
+          <button type="button" onclick="arvosana()">Arvosana</button>
+          <div id="arvosana"></div>
+
+          <h1>tehtävä 7</h1>
+          <p>Anna nimi: <input type="text" id="B[0]"> Anna arvosana: <input type="text" id="A[0]"></p>
+          <p>Anna nimi: <input type="text" id="B[1]"> Anna arvosana: <input type="text" id="A[1]"></p>
+          <p>Anna nimi: <input type="text" id="B[2]"> Anna arvosana: <input type="text" id="A[2]"></p>
+          <p>Anna nimi: <input type="text" id="B[3]"> Anna arvosana: <input type="text" id="A[3]"></p>
+          <p>Anna nimi: <input type="text" id="B[4]"> Anna arvosana: <input type="text" id="A[4]"></p>
+          <button type="button" onclick="grade()">Arvosana</button>
+          <div id="arvosana"></div>
 
 
 
 
 <br><br><br><br><br><br><br><br><br><br><br>
 
-    Kirjoita funktio, joka tulostaa annetun sanan kirjaimet aakkosjärjestyksessä. Esim aakkosissa(”webmaster”)  abeemrstw. Tässä auttaa, jos muuttaa tekstin taulukkomuuttujaksi komennolla Array.from(muuttuja); Muista kuitenkin tallentaa se johonkin muuttujaan, jotta pystyt käsittelemään sitä. Ja mieti, miten pystyt tulostamaan sen sen jälkeen.
-    Kirjoita funktio, joka arvostelee automaattisesti opiskelijoiden kokeet seuraavasti:
-        < 50 Hylätty
-        < 60 T1
-        < 70 T2
-        < 80 H3
-        < 90 H4
-        < 100 K5
-        Tulosta sen jälkeen funktiolla seuraavat tulokset: arvosana(Daniel, 80)
 
-        Daniel sai kokeesta 80 pistettä --> Daniel H4 (nuolen jälkeinen osa tulostuu)
-        Viivi sai kokeesta 77 pistettä --> Viivi H3
-        Tiina sai kokeesta 88 pistettä --> Tiina H4
-        Ismael sai kokeesta 95 pistettä --> Ismael K5
-        Tuomas sai kokeesta 68 pistettä --> Tuomas T2
 
 
     </div>
