@@ -7,27 +7,35 @@
   </head>
   <body>
 
-    <div class="tiedot">
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
 
     <h1>Kirjasto</h1>
-    <p>avain <input type="text" id="key"></p>
-    <p>Etunimi: <input type="text" id="etunimi"></p>
-    <div id="nim"></div>
-    <p>Sukunimi: <input type="text" id="sukunimi"></p>
-    <div id="suk"></div>
-    <p>Lähioisoite: <input type="text" id="lahiosoite"></p>
-    <div id="oso"></div>
-    <p>Postinumero: <input type="text" id="postinumero"></p>
-    <div id="pos"></div>
-    <p>Postitoimipaikka: <input type="text" id="postitoimipaikka"></p>
-    <div id="post"></div>
-    <p>Puhelin: <input type="text" id="puhelin"></p>
-    <div id="puh"></div>
-    <p>Sähköposti: <input type="text" id="sposti"></p>
-    <div id="sah"></div>
+    <p>avain <input type="text" id="key" required></p>
+    <p>Etunimi: <input type="text" name="etun" id="etunimi" required></p>
+    <p>Sukunimi: <input type="text" name="sukun" id="sukunimi" required></p>
+    <p>Lähioisoite: <input type="text" name="osoite" id="lahiosoite" required></p>
+    <p>Postinumero: <input type="text" name="postin" id="postinumero" required></p>
+    <p>Postitoimipaikka: <input type="text" name="postip" id="postitoimipaikka" required></p>
+    <p>Puhelin: <input type="text" name="puh" id="puhelin" required></p>
+    <p>Sähköposti: <input type="text" name="email" id="sposti" required></p>
 
-    <button type="submit" onclick="tallenna()">Tallenna tiedot</button>
-    <div id="tulosta"></div>
+    <button type="submit" onclick="tallenna()">tallenna</button>
+
+    <p>Etsi tiedosto, anna hakuavain <input type="text" id="AvainEtsi" required></p>
+    <button id="etsi">Etsi</button>
+    <br>
+
+    <p>Poista tiedosto<input type="text" id="AvainPoista" required></p>
+    <button id="poista">Poista</button>
+    <br><br>
+
+    <button id="poistaKaikki">Poista kaikki tiedostot</button>
+
+    <div id="nayta"></div>
+
+
+
+    </form>
 
     </div>
 

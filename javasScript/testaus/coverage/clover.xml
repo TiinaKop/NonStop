@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1645190705497" clover="3.2.0">
+  <project timestamp="1645190705497" name="All files">
+    <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6" elements="15" coveredelements="15" complexity="0" loc="9" ncloc="9" packages="1" files="3" classes="3"/>
+    <file name="artimeettiset.js" path="C:\Users\Käyttäjä\source\NonStop\javasScript\testaus\artimeettiset.js">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+    </file>
+    <file name="erotus.js" path="C:\Users\Käyttäjä\source\NonStop\javasScript\testaus\erotus.js">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+    </file>
+    <file name="summa.js" path="C:\Users\Käyttäjä\source\NonStop\javasScript\testaus\summa.js">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
