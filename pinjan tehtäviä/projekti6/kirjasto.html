@@ -9,6 +9,8 @@
   <body>
 
     <form name="myForm" action="/action_page.php" method="post">
+    <div class="vasen">
+
     <h1>Tietojen tallennus</h1>
 
     <label for="avain">Avain</label>
@@ -38,105 +40,32 @@
     <button type="submit" onclick="tallenna()">tallenna</button>
     <br><br>
 
+    </div>
+
+    <div class="oikea">
+
+    <h1>Etsi ja poista tiedosto</h1>
+
     <label for="etsi">Etsi tiedosto, anna hakuavain</label>
     <br>
     <input type="text" id="AvainEtsi"></p>
     <button id="etsi">Etsi</button>
-    <br><br>
+    <br><br><br>
 
     <label for="poista">Poista tiedosto</label>
     <br>
     <input type="text" id="AvainPoista"></p>
     <button id="poista">Poista</button>
-    <br><br>
+    <br><br><br><br>
 
     <button id="poistaKaikki">Poista kaikki tiedostot</button>
     <br><br>
 
-    <div id="nayta"></div>
-
+    </div>
     </form>
     <br><br><br>
 
-
-      <table>
-        <tr>
-          <th colspan="5">Testauslomake</th>
-        </tr>
-        <tr>
-          <th colspan="5">Käyttötapaukset: Lomakkeen täyttäminen</th>
-        </tr>
-        <tr>
-          <th colspan="5">Testaaja: Marika Koponen</th>
-        </tr>
-        <tr>
-          <th colspan="5">Pvm: 19.2.2022</th>
-        </tr>
-        <tr>
-          <td>Nro</td>
-          <td>Testitapauksen kuvaus</td>
-          <td>Odotettu tulos</td>
-          <td>Poikkeamat</td>
-          <td>OK / Hylätty</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Käyttäjä ei syötä mitään ja painaa tallenna</th>
-          <td>Ohjelma pyytää ensimmäistä tyhjää kenttää täytettäväksi, eikä suorita ohjelmaa eteenpäin</td>
-          <td></td>
-          <td>OK</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Käyttäjältä on jäänyt syöttämättä joihinkin kenttiin tiedot</td>
-          <td>Ohjelma pyytää täyttämään kaikki kentät, ensimmäisestä tyhjästä kentästä alkean, eikä suorita ohjelmaa eteenpäin</td>
-          <td></td>
-          <td>OK</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Käyttäjä syöttää numeroita kenttiin, joissa niitä ei käytetä (nimi, sukunimi, postitoimipaikka)</td>
-          <td>Ohjelma pyytää käyttäjää syöttämään vain tekstiä eikä suorita ohjelmaa eteenpäin</td>
-          <td></td>
-          <td>OK</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Käyttäjä syöttää tekstiä kenttiin, joissa niitä ei käytetä (puhelinnumero, postinumero)</td>
-          <td>Ohjelma pyytää käyttäjää syöttämään vain numeroita eikä suorita ohjelmaa eteenpäin</td>
-          <td></td>
-          <td>OK</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>Käyttäjä syöttää puhelinnumeroon tai postinumeroon numeroita ja sen jälkeen tekstiä</td>
-          <td>Ohjelma pyytää käyttäjää syöttämään vain numeroita eikä suorita ohjelmaa eteenpäin</td>
-          <td>Ohjelma ei ilmoita mitään ja menee eteenpäin</td>
-          <td>Hylätty</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>Käyttäjä syöttää sähköpostiosoitekenttään tiedot muuten kuin muodossa a@b.com</td>
-          <td>Ohjelma pyytää käyttäjää syöttämään kenttään s.postiosoitteen muodossa a@b.com eikä suorita ohjelmaa eteenpäin</td>
-          <td></td>
-          <td>OK</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>Käyttäjä syöttää postinumeroon muuta kuin 5 numeroa</td>
-          <td>Ohjelma pyytää käyttäjää syöttämään kenttään postinumeron (5 numeroa) eikä suorita ohjelmaa eteenpäin</td>
-          <td></td>
-          <td>OK</td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>Käyttäjä syöttää puhelinnumeroon muuta kuin 10 numeroa</td>
-          <td>Ohjelma pyytää käyttäjää syöttämään kenttään puhelinnumeron muodossa 0401234567</td>
-          <td></td>
-          <td>OK</td>
-        </tr>
-      </table>
-      <br><br>
+    <div id="nayta"></div>
 
   </body>
 </html>
