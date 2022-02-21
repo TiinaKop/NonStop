@@ -2,42 +2,141 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="kirjasto.css">
     <script src="kirjasto.js" charset="utf-8"></script>
     <title></title>
   </head>
   <body>
 
-    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    <form name="myForm" action="/action_page.php" method="post">
+    <h1>Tietojen tallennus</h1>
 
-    <h1>Kirjasto</h1>
-    <p>avain <input type="text" id="key" required></p>
-    <p>Etunimi: <input type="text" name="etun" id="etunimi" required></p>
-    <p>Sukunimi: <input type="text" name="sukun" id="sukunimi" required></p>
-    <p>Lähioisoite: <input type="text" name="osoite" id="lahiosoite" required></p>
-    <p>Postinumero: <input type="text" name="postin" id="postinumero" required></p>
-    <p>Postitoimipaikka: <input type="text" name="postip" id="postitoimipaikka" required></p>
-    <p>Puhelin: <input type="text" name="puh" id="puhelin" required></p>
-    <p>Sähköposti: <input type="text" name="email" id="sposti" required></p>
+    <label for="avain">Avain</label>
+    <input type="text" id="key" placeholder="1" required></p>
+
+    <label for="etunimi">Etunimi</label>
+    <input type="text" name="etun" id="etunimi" placeholder="Marika" required></p>
+
+    <label for="sukunimi">Sukunimi</label>
+    <input type="text" name="sukun" id="sukunimi" placeholder="Koponen" required></p>
+
+    <label for="lahiosoite">Lähiosoite</label>
+    <input type="text" name="osoite" id="lahiosoite" placeholder="Koposentie 4" required></p>
+
+    <label for="postinumero">Postinumero</label>
+    <input type="text" name="postin" id="postinumero" placeholder="02340" required></p>
+
+    <label for="postitoimipaikka">Postitoimipaikka</label>
+    <input type="text" name="postip" id="postitoimipaikka" placeholder="Malmi" required></p>
+
+    <label for="puhelin">Puhelin</label>
+    <input type="text" name="puh" id="puhelin" placeholder="0401234567" required></p>
+
+    <label for="sahkoposti">Sähköpostiosoite</label>
+    <input type="text" name="email" id="sposti" placeholder="marika.koponen@gamil.com" required></p>
 
     <button type="submit" onclick="tallenna()">tallenna</button>
+    <br><br>
 
-    <p>Etsi tiedosto, anna hakuavain <input type="text" id="AvainEtsi" required></p>
-    <button id="etsi">Etsi</button>
+    <label for="etsi">Etsi tiedosto, anna hakuavain</label>
     <br>
+    <input type="text" id="AvainEtsi"></p>
+    <button id="etsi">Etsi</button>
+    <br><br>
 
-    <p>Poista tiedosto<input type="text" id="AvainPoista" required></p>
+    <label for="poista">Poista tiedosto</label>
+    <br>
+    <input type="text" id="AvainPoista"></p>
     <button id="poista">Poista</button>
     <br><br>
 
     <button id="poistaKaikki">Poista kaikki tiedostot</button>
+    <br><br>
 
     <div id="nayta"></div>
 
-
-
     </form>
+    <br><br><br>
 
-    </div>
+
+      <table>
+        <tr>
+          <th colspan="5">Testauslomake</th>
+        </tr>
+        <tr>
+          <th colspan="5">Käyttötapaukset: Lomakkeen täyttäminen</th>
+        </tr>
+        <tr>
+          <th colspan="5">Testaaja: Marika Koponen</th>
+        </tr>
+        <tr>
+          <th colspan="5">Pvm: 19.2.2022</th>
+        </tr>
+        <tr>
+          <td>Nro</td>
+          <td>Testitapauksen kuvaus</td>
+          <td>Odotettu tulos</td>
+          <td>Poikkeamat</td>
+          <td>OK / Hylätty</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Käyttäjä ei syötä mitään ja painaa tallenna</th>
+          <td>Ohjelma pyytää ensimmäistä tyhjää kenttää täytettäväksi, eikä suorita ohjelmaa eteenpäin</td>
+          <td></td>
+          <td>OK</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Käyttäjältä on jäänyt syöttämättä joihinkin kenttiin tiedot</td>
+          <td>Ohjelma pyytää täyttämään kaikki kentät, ensimmäisestä tyhjästä kentästä alkean, eikä suorita ohjelmaa eteenpäin</td>
+          <td></td>
+          <td>OK</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Käyttäjä syöttää numeroita kenttiin, joissa niitä ei käytetä (nimi, sukunimi, postitoimipaikka)</td>
+          <td>Ohjelma pyytää käyttäjää syöttämään vain tekstiä eikä suorita ohjelmaa eteenpäin</td>
+          <td></td>
+          <td>OK</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Käyttäjä syöttää tekstiä kenttiin, joissa niitä ei käytetä (puhelinnumero, postinumero)</td>
+          <td>Ohjelma pyytää käyttäjää syöttämään vain numeroita eikä suorita ohjelmaa eteenpäin</td>
+          <td></td>
+          <td>OK</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Käyttäjä syöttää puhelinnumeroon tai postinumeroon numeroita ja sen jälkeen tekstiä</td>
+          <td>Ohjelma pyytää käyttäjää syöttämään vain numeroita eikä suorita ohjelmaa eteenpäin</td>
+          <td>Ohjelma ei ilmoita mitään ja menee eteenpäin</td>
+          <td>Hylätty</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Käyttäjä syöttää sähköpostiosoitekenttään tiedot muuten kuin muodossa a@b.com</td>
+          <td>Ohjelma pyytää käyttäjää syöttämään kenttään s.postiosoitteen muodossa a@b.com eikä suorita ohjelmaa eteenpäin</td>
+          <td></td>
+          <td>OK</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Käyttäjä syöttää postinumeroon muuta kuin 5 numeroa</td>
+          <td>Ohjelma pyytää käyttäjää syöttämään kenttään postinumeron (5 numeroa) eikä suorita ohjelmaa eteenpäin</td>
+          <td></td>
+          <td>OK</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Käyttäjä syöttää puhelinnumeroon muuta kuin 10 numeroa</td>
+          <td>Ohjelma pyytää käyttäjää syöttämään kenttään puhelinnumeron muodossa 0401234567</td>
+          <td></td>
+          <td>OK</td>
+        </tr>
+      </table>
+      <br><br>
 
   </body>
 </html>
