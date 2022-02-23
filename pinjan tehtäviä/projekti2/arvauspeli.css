@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#peli {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  text-align: center;
+  padding: 3%;
+}
