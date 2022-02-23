@@ -5,16 +5,22 @@
     <script src="javascript.js" charset="utf-8"></script>
     <title></title>
   </head>
-  <body onload="kaikki()">
+  <body>
 
-    <label for="luku">Anna luku</label>
-    <input type="number" id="luku">
-    <div id="tulostaLuku"></div><br><br><br>
+    <p>Ehto2 lauseita1</p>
+    <p>Anna luku: <input type="number" id="pariLuku"></p>
+    <button type="button" onclick="pari()">Paina</button><br><br>
+    <div id="tulostaYksi"></div>
 
+    <p>Ehto2 lauseita2</p>
+    <p>Anna numero väliltä 1-7: <input type="number" id="viikonpvLuku"></p>
+    <button type="button" onclick="viikonpaivat()">Paina</button><br><br>
+    <div id="viikonpv"></div>
 
-    <p>Anna luku: <input type="number" id="lukuKaksi"></p>
-    <button type="button" onclick="lukuUusi()">Paina</button><br><br>
-    <div id="tulostaKaksi"></div>
+    <p>Ehto2 lauseita3</p>
+    <p>Anna vuosiluku: <input type="number" id="vuosiLuku"></p>
+    <button type="button" onclick="vuosi()">Paina</button><br><br>
+    <div id="tulostaVuosi"></div>
 
   </body>
 </html>

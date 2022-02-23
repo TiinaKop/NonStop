@@ -43,7 +43,7 @@ function jarjestaLuvut() {
     neljas = parseInt(document.getElementById('neljas').value);
     viides = parseInt(document.getElementById('viides').value);
     document.getElementById('naytaSuurin').innerHTML = "Annoit numerot: " + ekat + " " + toka + " " + kolmas + " " + neljas + " " + viides;
-    document.getElementById('naytaSuurinToinen').innerHTML = Math.max(ekat, toka, kolmas, neljas, viides);
+    document.getElementById('naytaSuurinToinen').innerHTML = "Suurin numero on " + Math.max(ekat, toka, kolmas, neljas, viides);
   }
 
   function paritonParillinen() {
