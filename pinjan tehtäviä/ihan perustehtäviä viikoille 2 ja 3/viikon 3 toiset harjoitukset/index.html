@@ -2,50 +2,57 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css.css">
     <script src="js.js" charset="utf-8"></script>
     <title></title>
   </head>
   <body>
 
-<h1>Tehtääv 1</h1>
-<p>Tee ohjelma, jolle voi syöttää Scrabble-pelin sanan ja ohjelma
-  laskee kirjain pisteet seuraavasti (TOIMII VAIN ISOILLA KIRJAIMILLA) <br><br>
-
-A, E, I, N, S, T = 1p <br>
-O, Ä, K, L = 2p <br>
-U, M = 3p <br>
-Y, H, J, P, R, V = 4p <br>
-Ö, D = 7p <br>
-B, F, G = 8p <br>
-C = 10p <br>
-loput kirjaimet = 12p</p> <br>
-<p>Anna sana: <input type="text" id="sana"></p>
-<button type="button" onclick="scrabble()">Takista pisteet</button><br>
-<div id="pisteet"></div>
-
-
-
-<h1>Tehtävä 2</h1>
-<p>Tee ohjelma, joka arpoo lottonumerot (7 kpl)</p>
-<button type="button" onclick="lotto()">Arvo numerot</button>
-<div id="arvottu"></div>
+      <article class="laatikko" id="a">
+          <h1>Tehtävä 1</h1>
+          <p>Tee ohjelma, jolle voi syöttää Scrabble-pelin sanan ja ohjelma
+            laskee kirjain pisteet seuraavasti<br><br>
+          A, E, I, N, S, T = 1p <br>
+          O, Ä, K, L = 2p <br>
+          U, M = 3p <br>
+          Y, H, J, P, R, V = 4p <br>
+          Ö, D = 7p <br>
+          B, F, G = 8p <br>
+          C = 10p <br>
+          loput kirjaimet = 12p</p> <br>
+          <p>Anna sana: <input type="text" id="sana"></p>
+          <button type="button" onclick="scrabble()">Takista pisteet</button><br>
+          <div id="pisteet"></div>
+      </article>
 
 
-<h1>Tehtävä 3</h1>
-<p>Tee ohjelma, joka muuntaa määritetyn (javascriptissä) 2-uloitteisen
-  taulukon taulukkomuotoon <br>
-  Esimerkiksi [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27],
-  [7, 4, 28, 14], [3, 10, 26, 7]]</p>
-<button type="button" onclick="taulukko()">Muunna taulukoksi</button>
-<div id="taulukko"></div>
+      <article class="laatikko" id="b">
+          <h1>Tehtävä 2</h1>
+          <p>Tee ohjelma, joka arpoo lottonumerot (7 kpl)</p>
+          <button type="button" onclick="lotto()">Arvo numerot</button>
+          <div id="arvottu"></div>
+      </article>
 
 
-<h1>Tehtävä 4</h1>
-<p>Tee ohjelma, joka tekee taulukon kaikista korttipakan korteista
-  (2 sisäkkäistä silmukkaa) ja sen jälkeen sekoittaa "pakan" ja
-  arpoo 5 korttia sieltä</p>
-<button type="button" onclick="korttipakka()">Muunna taulukoksi</button>
-<div id="kortit"></div><br><br><br><br>
+      <article class="laatikko" id="c">
+          <h1>Tehtävä 3</h1>
+          <p>Tee ohjelma, joka muuntaa määritetyn (javascriptissä) 2-uloitteisen
+            taulukon taulukkomuotoon <br>
+            Esimerkiksi [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27],
+            [7, 4, 28, 14], [3, 10, 26, 7]]</p>
+          <button type="button" onclick="taulukko()">Muunna taulukoksi</button>
+          <div id="taulukko"></div>
+      </article>
+
+
+      <article class="laatikko" id="d">
+          <h1>Tehtävä 4</h1>
+          <p>Tee ohjelma, joka tekee taulukon kaikista korttipakan korteista
+            (2 sisäkkäistä silmukkaa) ja sen jälkeen sekoittaa "pakan" ja
+            arpoo 5 korttia sieltä</p>
+          <button type="button" onclick="korttipakka()">Muunna taulukoksi</button>
+          <div id="kortit"></div><br><br><br><br>
+      </article>
 
 
 

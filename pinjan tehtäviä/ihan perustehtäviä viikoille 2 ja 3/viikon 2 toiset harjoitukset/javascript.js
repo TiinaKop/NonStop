@@ -50,6 +50,31 @@ function vuosi() {
   }
   else {
     document.getElementById('tulostaVuosi').innerHTML = "Vuosi ei ole karkausvuosi";
-
   }
+}
+
+function summa () {
+  var eka = parseInt(document.getElementById('yksi').value);
+  var toka = parseInt(document.getElementById('kaksi').value);
+  var kolmas = parseInt(document.getElementById('kolme').value);
+  var neljas = parseInt(document.getElementById('nelja').value);
+  var viides = parseInt(document.getElementById('viisi').value);
+  var summa = 0;
+  var keskiarvo = 0;
+
+  summa = eka + toka + kolmas + neljas + viides;
+  keskiarvo = summa / 5;
+
+document.getElementById('tulostaSumma').innerHTML =
+"lukujen summa on: " + summa + " ja keskiarvo on: " + keskiarvo;
+}
+
+function luku() {
+  var luku = parseInt(document.getElementById('numero').value);
+  var lause = "";
+  for (var i = 0; i < luku; i++);
+    lause += luku + "x 1 = " + luku * 1;
+    lause+= "<br>";
+  }
+document.getElementById('tulostaLuku').innerHTML = lause;
 }

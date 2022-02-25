@@ -2,25 +2,54 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css.css">
     <script src="javascript.js" charset="utf-8"></script>
     <title></title>
   </head>
   <body>
 
-    <p>Ehto2 lauseita1</p>
-    <p>Anna luku: <input type="number" id="pariLuku"></p>
-    <button type="button" onclick="pari()">Paina</button><br><br>
-    <div id="tulostaYksi"></div>
+      <div class="keskelle">
 
-    <p>Ehto2 lauseita2</p>
-    <p>Anna numero väliltä 1-7: <input type="number" id="viikonpvLuku"></p>
-    <button type="button" onclick="viikonpaivat()">Paina</button><br><br>
-    <div id="viikonpv"></div>
+          <article class="laatikko" id="a">
+              <h1>Ehto2 lauseita1</h1>
+              <p>Anna luku: <input type="number" id="pariLuku"></p>
+              <button type="button" onclick="pari()">Paina</button><br><br>
+              <div id="tulostaYksi"></div>
+          </article>
 
-    <p>Ehto2 lauseita3</p>
-    <p>Anna vuosiluku: <input type="number" id="vuosiLuku"></p>
-    <button type="button" onclick="vuosi()">Paina</button><br><br>
-    <div id="tulostaVuosi"></div>
+          <article class="laatikko" id="b">
+              <h1>Ehto2 lauseita2</h1>
+              <p>Anna numero väliltä 1-7: <input type="number" id="viikonpvLuku"></p>
+              <button type="button" onclick="viikonpaivat()">Paina</button><br><br>
+              <div id="viikonpv"></div>
+          </article>
+
+          <article class="laatikko" id="c">
+              <h1>Ehto2 lauseita3</h1>
+              <p>Anna vuosiluku: <input type="number" id="vuosiLuku"></p>
+              <button type="button" onclick="vuosi()">Paina</button><br><br>
+              <div id="tulostaVuosi"></div>
+          </article>
+
+          <article class="laatikko" id="d">
+              <h1>Ehto2 lauseita4</h1>
+              <p>Anna 1. luku: <input type="number" id="yksi"></p>
+              <p>Anna 2. luku: <input type="number" id="kaksi"></p>
+              <p>Anna 3. luku: <input type="number" id="kolme"></p>
+              <p>Anna 4. luku: <input type="number" id="nelja"></p>
+              <p>Anna 5. luku: <input type="number" id="viisi"></p>
+              <button type="button" onclick="summa()">Paina</button><br><br>
+              <div id="tulostaSumma"></div>
+          </article>
+
+          <article class="laatikko" id="e">
+              <h1>Ehto2 lauseita5</h1>
+              <p>Anna numero: <input type="number" id="numero"></p>
+              <button type="button" onclick="luku()">Paina</button><br><br>
+              <div id="tulostaLuku"></div>
+          </article>
+
+      </div>
 
   </body>
 </html>

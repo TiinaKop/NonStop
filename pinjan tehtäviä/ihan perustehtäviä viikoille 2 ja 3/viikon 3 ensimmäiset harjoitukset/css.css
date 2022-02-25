@@ -1,0 +1,55 @@
+.laatikko {
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  margin: 10px;
+  float: left;
+}
+
+#a {
+  background-color: #D46A6A;
+}
+
+#b {
+  background-color: #F9F034;
+}
+
+#c, #d {
+  background-color: #48D02C;
+}
+
+#e, #f {
+  background-color: #E9F034;
+}
+
+#g {
+  background-color: #F46A6A;
+}
+
+#h {
+  background-color: #B46A6A;
+}
+
+#i {
+  background-color: #58D02C;
+}
+
+#j, #k {
+  background-color: #F9F034;
+}
+
+#l, #m {
+  background-color: #A46A6A;
+}
+
+#n {
+  background-color: #68D02C;
+}
+
+#o {
+  background-color: #F46A6A;
+}
+
+h1, p, div {
+  font-family: Garamond, Verdana;
+}

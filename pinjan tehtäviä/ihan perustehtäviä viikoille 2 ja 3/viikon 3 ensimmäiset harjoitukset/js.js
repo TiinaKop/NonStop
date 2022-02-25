@@ -144,8 +144,7 @@ function suuriPieni() {
 function suuriP()
 {
   var taulu = [], temp;
-  for(var x = 0; x < 5; x++)
-  {
+  for(var x = 0; x < 5; x++){
     temp = document.getElementById('taulukko['+x+']').value;
     temp = parseInt(temp);
     taulu.push(temp);
@@ -153,6 +152,7 @@ function suuriP()
   taulu = taulu.sort((a,b) => a-b);
   document.getElementById('tulostaS').innerHTML = "Pienin luku on " + taulu[0] + "<br>Suurin luku on " + taulu[taulu.length-1];
 }
+
 
 
 function salasanaRandom() {
@@ -169,21 +169,6 @@ function salasanaRandom() {
   }
   var salasana = taulu.join("");
 document.getElementById('tulostaSalasanaR').innerHTML = salasana;
-}
-
-
-
-
-
-function Sp() {
-  var taulu = [], temp;
-  for (var w = 0; w < 5; w++) {
-    temp = document.getElementById('k['+w+']').value;
-    temp = parseInt(temp);
-    taulu.push(temp);
-  }
-  taulu = taulu.sort((a,b)=>a-b);
-  document.getElementById('tulosSp').innerHTML = "Pienin " + taulu[0] + "<br>Suurin " + taulu[taulu.length-1];
 }
 
 

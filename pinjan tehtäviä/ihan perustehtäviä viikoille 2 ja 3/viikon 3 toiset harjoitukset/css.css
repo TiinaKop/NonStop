@@ -1,23 +1,30 @@
-.alusta {
-  max-width: 200px;
+
+.laatikko {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  margin-top: 20px;
 }
 
-.buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  border: 1px solid black;
-  text-align: center;
+
+#a {
+  background-color: #81D446;
 }
 
-.button {
-  border: 0.5px solid;
+#b {
+  background-color: #F0EE50;
 }
 
-table{
-text-align: right;
-border-collapse: collapse;
+#c {
+  background-color: #FC7D00;
 }
 
-td{
-  width: 20px;
+#d {
+  background-color: #FB2E38;
+}
+
+h1, p, div {
+  font-family: serif, monospace;
 }
