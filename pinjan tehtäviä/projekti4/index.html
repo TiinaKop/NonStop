@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css.css">
+
+    <title>Tehtävälista</title>
+  </head>
+  <body>
+      <article class="Tehtavalista">
+          <div class="alku">
+              <h1>Tehtäviä, jotka vaatii tekemistä</h1>
+              <h3 class="rivi1">Syötä teksti syöttölaatikkoon lisätäksesi tehtävän.</h3>
+              <h3 class="rivi2">Napauta tehtävää, kun se on valmis.</h3>
+              <h3 class="rivi3">Napauta X-painiketta poistaaksesi tehtävä listalta.</h3>
+              <input type="text" id="myInput" placeholder="New item...">
+              <span onclick="newElement()" class="addBtn">Lisää</span>
+          </div>
+          <br><br>
+
+          <ul id="myUL">
+
+          </ul>
+
+      </article>
+
+    <script src="javascript.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -72,9 +72,23 @@ document.getElementById('tulostaSumma').innerHTML =
 function luku() {
   var luku = parseInt(document.getElementById('numero').value);
   var lause = "";
-  for (var i = 0; i < luku; i++);
-    lause += luku + "x 1 = " + luku * 1;
-    lause+= "<br>";
+  for (var i = 0; i < luku; i++) {
+    if (luku == 1) {
+    document.getElementById('tulostaLuku').innerHTML =
+    lause+= luku + "x 1 = " + luku * 1;
   }
-document.getElementById('tulostaLuku').innerHTML = lause;
 }
+
+
+
+
+
+
+/*  var luku = parseInt(document.getElementById('numero').value);
+  var x = "";
+  for (var p = 1; p <= luku; p++) {
+    x+= p + "x 1 = " + p * 1;
+    x+= "<br>";
+  }
+  document.getElementById('tulostaLuku').innerHTML = x;
+}*/

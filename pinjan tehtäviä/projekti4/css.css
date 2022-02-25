@@ -1,0 +1,44 @@
+.Tehtavalista {
+  width: 1000px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: powderblue;
+  padding: 30px;
+}
+
+.alku {
+  text-align: center;
+}
+
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.rivi1 {
+  color: orange;
+}
+
+.rivi2 {
+  color: lightgreen;
+}
+
+.rivi3 {
+  color: blue;
+}
+
+input {
+  border-radius: 5px;
+  width: 500px;
+  padding: 8px;
+}
+
+span {
+  background-color: blue;
+  border-radius: 5px;
+  color: lightblue;
+  padding: 8px;
+}
