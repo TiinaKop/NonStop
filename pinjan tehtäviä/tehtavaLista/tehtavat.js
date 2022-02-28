@@ -1,3 +1,5 @@
+
+
 // Luodaan X painike jokaiseen tehtävään
 var myNodelist = document.getElementsByTagName("LI"); //
 for (var i = 0; i < myNodelist.length; i++) { // alkaen nollasta, päättyy myNodelistiin
@@ -17,16 +19,8 @@ for (var i = 0; i < close.length; i++) {
   }
 }
 
-// Napauttamalla tehtävää se tulee tehdyksi
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) { // lisää tapahtuman hiiren klikkaus, toimii functiolla ev
-  if (ev.target.tagName === 'LI') { // Jos elementti on li
-    ev.target.classList.toggle('checked'); // saa valittua pois ja päälle (checked määritellään css:ssä, mikä muuttuu)
-  }
-}, false);
-
 // lisää uuden tehtävän, kun painaa lisää
-function uusiTehtava() {
+function add() {
   var li = document.createElement("li"); //Luodaan li elementti
   var kayttajanTehtava = document.getElementById("kayttajanTehtava").value; // haetaan käyttäjän kirjoittama teksti
   var teksti = document.createTextNode(kayttajanTehtava); // luodaan teksti

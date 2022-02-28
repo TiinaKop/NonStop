@@ -2,8 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css.css">
-    <script src="javascript.js" charset="utf-8"></script>
+  
+    <script src="uusi.js" charset="utf-8"></script>
     <title>Tehtävälista</title>
   </head>
   <body>
@@ -13,14 +13,19 @@
               <h3 class="rivi1">Syötä teksti syöttölaatikkoon lisätäksesi tehtävän.</h3>
               <h3 class="rivi2">Napauta tehtävää, kun se on valmis.</h3>
               <h3 class="rivi3">Napauta X-painiketta poistaaksesi tehtävä listalta.</h3>
-              <input type="text" id="kayttajanTehtava" placeholder="New item...">
-              <span onclick="uusiTehtava()" class="addBtn">Lisää</span>
+              <input type="text" id="myInput" placeholder="New item...">
+              <span onclick="newElement()" class="addBtn">Lisää</span>
           </div>
           <br><br>
 
-          <ul id="tehtavat">
-
+          <ul id="myUL">
+            <h3>Tekemättömän</h3>
           </ul>
+
+          <ul id="myULtehdyt">
+            <h3>Tehdyt</h3>
+          </ul>
+
 
       </article>
 
