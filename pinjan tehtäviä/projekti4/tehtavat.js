@@ -19,6 +19,15 @@ for (var i = 0; i < close.length; i++) {
   }
 }
 
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) { // lisää tapahtuman hiiren klikkaus, toimii functiolla ev
+  if (ev.target.tagName === 'LI') { // Jos elementti on li
+    ev.target.classList.toggle('checked'); // saa valittua pois ja päälle (checked määritellään css:ssä, mikä muuttuu)
+  }
+}, false);
+
+
+
 // lisää uuden tehtävän, kun painaa lisää
 function add() {
   var li = document.createElement("li"); //Luodaan li elementti
@@ -28,7 +37,7 @@ function add() {
   if (kayttajanTehtava === '') {  // käyttäjä painaa liitä, muttei ole tekstiä
     alert("Kirjoita tehtävä");
   } else {
-    document.getElementById("tehtavat").appendChild(li); // liitetään teksti tehtavat elementtiin
+    document.getElementById("tekemattomat").appendChild(li); // liitetään teksti tehtavat elementtiin
   }
   document.getElementById("kayttajanTehtava").value = ""; // tyhjennetään teksti syöttölaatikosta
 
