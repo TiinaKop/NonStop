@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="hangman.css">
+    <script src="hangman.js" charset="utf-8"></script>
+    <title>Hangman</title>
+  </head>
+  <body>
+
+
+<h1>Hangman</h1>
+<h3>Arvaatko 10:llä kirjaimella koko sanan</h3>
+<p id="viivanPaikka"></p>
+<form name="rateformular">
+<input name="ratezeichen" type="text" size="5" maxlength="1">
+<input name="ratebutton" type="button" value="Guess" onClick="pruefeZeichen()">
+
+<p id="vaaraKirjainPaikka">Arvatut väärät kirjaimet:</p>
+
+<input name="refresh" type="button" value="New Game" onClick="location.reload()">
+</form>
+
+</body>
+</html>
