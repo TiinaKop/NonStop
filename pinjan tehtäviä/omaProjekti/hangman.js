@@ -1,3 +1,4 @@
+
 var kirjain = [
   ["H","A","T","T","U"],
   ["E","L","Ä","M","Y","S"],
@@ -9,8 +10,7 @@ var kirjain = [
   ["A","U","T","O"],
   ["T","I","E","T","O","K","O","N","E"]
 ]
-var sekoitus = Math.floor((Math.random()*(kirjain.length-1)));
-
+var sekoitus = Math.floor((Math.random()*(kirjain.length-1))); // sekoittaa sanat
 var sana = kirjain[sekoitus]; // arvattava sana valitaan yllä olevasta taulukosta
 var sananPituus = new Array(sana.length); // arvattavan sanan pituus
 var vaaraKirjain = 0;
@@ -30,9 +30,9 @@ function tulostaViiva(){
 }
 
 // tarkistaa, vastaako käyttäjän antama kirjain yhtä tai useampaa sanan kirjainta
-var pruefeZeichen = function(){
-	var formName = document.rateformular;
-	var b = formName.elements["ratezeichen"];
+function arvaaKirjain(){
+	var formName = document.arvaaSana;
+	var b = formName.elements["kayttajanSytto"];
 	var kayttajanKirjain = b.value; // käyttäjän antama kirjain
 	kayttajanKirjain = kayttajanKirjain.toUpperCase();
 	for (var i = 0; i < sana.length; i++){
@@ -43,12 +43,18 @@ var pruefeZeichen = function(){
 	b.value = ""; // tyhejentää kentän, jossa arvataa kirjain
 	}
 
+
+ if (/\d/.test(kayttajanKirjain)) { // tarkistaa sisältääkö numeroita
+    alert("Syötä kirjain");
+    return false;
+  }
+
 	//poistaa arvauskentän ja korvaa sen uudella
 	var viivanPaikka = document.getElementById("viivanPaikka");
 	viivanPaikka.innerHTML="";
 	tulostaViiva();
 
-	// jos arvattu kirjain ei ole sanassa, kirjain laitetaan "väärät kirjaimet" -listalle
+	// jos arvattu kirjain ei ole sanassa, kirjain laitetaan vaaraKirjainPaikka kohtaan
   	if(!oikeaKirjain){
 		var vaaraKirjainPaikka = document.getElementById("vaaraKirjainPaikka");
 		var viiva = document.createTextNode(" " + kayttajanKirjain);
@@ -65,17 +71,20 @@ var pruefeZeichen = function(){
 	}
   // jos sana on oikein, voitat
 	if(oikeaSana){
-		alert("Voiti!");
+    document.getElementById("vihje").innerHTML = "Voitit!"
+    document.getElementById("uusiPeli").innerHTML = "Aloittaakseni uuden pelin, paina Pelaa uudestaan"
 	}
 
-	// Kun olet arvannut 10 numeroa, häviät pelin
-	if(vaaraKirjain === 1){
-		alert("Hävisit pelin");
+	// Kun olet arvannut 10 kirjainta, häviät pelin
+	if(vaaraKirjain === 3){
+    document.getElementById("vihje").innerHTML = "Hävisit!"
+    document.getElementById("uusiPeli").innerHTML = "Aloittaakseni uuden pelin, paina Pelaa uudestaan"
 	}
 }
+
 
 function init(){
 	tulostaViiva();
 }
 
-window.onload = init;
+window.onload = init; // tulostaViiva functio latautuu, kun sivu avataan

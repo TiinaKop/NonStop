@@ -1,21 +1,44 @@
-@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
-
-body {
-	background: url('http://www.writteninpencil.de/Projekte/Hangman/hangman-bg.png') fixed;
-	text-align: center;
-	font-family: Helvetica, sans-serif;
+.container {
+  width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 80px 80px 80px;
+  background: #777;
+  text-align: center;
 }
+
+
+
 input {
-	border: 2px solid #999;
-	font-family: Helvetica, sans-serif;
-	color: #999;
+  font-size: 20px;
 }
 
-#ratefeld {
-	font-family: 'Permanent Marker', 'cursive';
-	font-size: 2.0em;
+input:hover {
+  background: #FFF;
+}
+
+
+h1, h3, p, input {
+	font-family: Garamond;
 }
 
 h1 {
-	font-family: 'Permanent Marker', 'cursive';
+  font-size: 70px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+#vihje {
+  font-size: 30px;
+}
+
+#uusiPeli {
+  font-size: 20px;
 }
