@@ -72,13 +72,13 @@ function arvaaKirjain(){
   // jos sana on oikein, voitat
 	if(oikeaSana){
     document.getElementById("vihje").innerHTML = "Voitit!"
-    document.getElementById("uusiPeli").innerHTML = "Aloittaakseni uuden pelin, paina Pelaa uudestaan"
+    document.getElementById("uusiPeli").innerHTML = "Aloittaakseni uuden pelin, paina Pelaa uudestaan painiketta"
 	}
 
 	// Kun olet arvannut 10 kirjainta, häviät pelin
-	if(vaaraKirjain === 3){
+	if(vaaraKirjain === 10){
     document.getElementById("vihje").innerHTML = "Hävisit!"
-    document.getElementById("uusiPeli").innerHTML = "Aloittaakseni uuden pelin, paina Pelaa uudestaan"
+    document.getElementById("uusiPeli").innerHTML = "Aloittaakseni uuden pelin, paina Pelaa uudestaan painiketta"
 	}
 }
 
